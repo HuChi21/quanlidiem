@@ -18,7 +18,7 @@ namespace QLDiemSV.DAO
 
         }
         private DataProvider() { }
-        private string connectionSTR = "Data Source=.\\MSSQLSERVER02;Initial Catalog=QLSV;Integrated Security=True";
+        private string connectionSTR = "Data Source=HUCHi;Initial Catalog=QLSV;Integrated Security=True";
         public DataTable ExecuteQuery(string query,object[] parameter=null)
         {
             DataTable data = new DataTable();

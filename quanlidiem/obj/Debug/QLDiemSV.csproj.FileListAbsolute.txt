@@ -24,3 +24,16 @@ C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\obj\Debug\QLDiemS
 C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\obj\Debug\QLDiemSV.csproj.CoreCompileInputs.cache
 C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\obj\Debug\QLDiemSV.exe
 C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\obj\Debug\QLDiemSV.pdb
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\quanlidiem\quanlidiem\bin\Debug\QLDiemSV.exe.config
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\quanlidiem\quanlidiem\bin\Debug\QLDiemSV.exe
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\quanlidiem\quanlidiem\bin\Debug\QLDiemSV.pdb
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\quanlidiem\quanlidiem\obj\Debug\QLDiemSV.csproj.AssemblyReference.cache
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\quanlidiem\quanlidiem\obj\Debug\QLDiemSV.Admin.resources
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\quanlidiem\quanlidiem\obj\Debug\QLDiemSV.DangNhap.resources
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\quanlidiem\quanlidiem\obj\Debug\QLDiemSV.Properties.Resources.resources
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\quanlidiem\quanlidiem\obj\Debug\QLDiemSV.QuanLyDiem.resources
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\quanlidiem\quanlidiem\obj\Debug\QLDiemSV.TraCuuTT.resources
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\quanlidiem\quanlidiem\obj\Debug\QLDiemSV.csproj.GenerateResource.cache
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\quanlidiem\quanlidiem\obj\Debug\QLDiemSV.csproj.CoreCompileInputs.cache
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\quanlidiem\quanlidiem\obj\Debug\QLDiemSV.exe
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\quanlidiem\quanlidiem\obj\Debug\QLDiemSV.pdb
