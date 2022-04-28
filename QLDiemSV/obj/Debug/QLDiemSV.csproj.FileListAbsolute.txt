@@ -1,0 +1,26 @@
+E:\DATABASE SQL\QLDiemSV\bin\Debug\QLDiemSV.exe.config
+E:\DATABASE SQL\QLDiemSV\bin\Debug\QLDiemSV.exe
+E:\DATABASE SQL\QLDiemSV\bin\Debug\QLDiemSV.pdb
+E:\DATABASE SQL\QLDiemSV\obj\Debug\QLDiemSV.csproj.AssemblyReference.cache
+E:\DATABASE SQL\QLDiemSV\obj\Debug\QLDiemSV.Properties.Resources.resources
+E:\DATABASE SQL\QLDiemSV\obj\Debug\QLDiemSV.csproj.GenerateResource.cache
+E:\DATABASE SQL\QLDiemSV\obj\Debug\QLDiemSV.csproj.CoreCompileInputs.cache
+E:\DATABASE SQL\QLDiemSV\obj\Debug\QLDiemSV.exe
+E:\DATABASE SQL\QLDiemSV\obj\Debug\QLDiemSV.pdb
+E:\DATABASE SQL\QLDiemSV\obj\Debug\QLDiemSV.QuanLyDiem.resources
+E:\DATABASE SQL\QLDiemSV\obj\Debug\QLDiemSV.DangNhap.resources
+E:\DATABASE SQL\QLDiemSV\obj\Debug\QLDiemSV.Admin.resources
+E:\DATABASE SQL\QLDiemSV\obj\Debug\QLDiemSV.TraCuuTT.resources
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\bin\Debug\QLDiemSV.exe.config
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\bin\Debug\QLDiemSV.exe
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\bin\Debug\QLDiemSV.pdb
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\obj\Debug\QLDiemSV.csproj.AssemblyReference.cache
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\obj\Debug\QLDiemSV.Admin.resources
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\obj\Debug\QLDiemSV.DangNhap.resources
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\obj\Debug\QLDiemSV.Properties.Resources.resources
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\obj\Debug\QLDiemSV.QuanLyDiem.resources
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\obj\Debug\QLDiemSV.TraCuuTT.resources
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\obj\Debug\QLDiemSV.csproj.GenerateResource.cache
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\obj\Debug\QLDiemSV.csproj.CoreCompileInputs.cache
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\obj\Debug\QLDiemSV.exe
+C:\Users\HuChi\Desktop\HocKi6\Cn Thuc tap HTTT\Githup\QLDiemSV\obj\Debug\QLDiemSV.pdb
