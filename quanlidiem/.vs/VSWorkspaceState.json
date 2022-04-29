@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\DAO"
   ],
-  "SelectedNode": "\\Admin.cs",
+  "SelectedNode": "\\DAO\\DataProvider.cs",
   "PreviewInSolutionExplorer": false
 }
