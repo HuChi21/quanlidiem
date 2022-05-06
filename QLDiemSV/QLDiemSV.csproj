@@ -61,6 +61,7 @@
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\GiangVienDAO.cs" />
+    <Compile Include="DAO\KetQuaDAO.cs" />
     <Compile Include="DAO\KhoaDAO.cs" />
     <Compile Include="DAO\LopDAO.cs" />
     <Compile Include="DAO\MonHocDAO.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="QuanLyDiem.resx">
       <DependentUpon>QuanLyDiem.cs</DependentUpon>
@@ -121,6 +123,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\DHCN.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
