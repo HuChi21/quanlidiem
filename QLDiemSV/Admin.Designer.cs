@@ -141,31 +141,34 @@ namespace QLDiemSV
             this.label21 = new System.Windows.Forms.Label();
             this.tbDiem = new System.Windows.Forms.TabPage();
             this.panel51 = new System.Windows.Forms.Panel();
+            this.panel53 = new System.Windows.Forms.Panel();
+            this.label35 = new System.Windows.Forms.Label();
+            this.txbTimAdmin = new System.Windows.Forms.TextBox();
             this.panel52 = new System.Windows.Forms.Panel();
             this.label34 = new System.Windows.Forms.Label();
             this.dsDiem = new System.Windows.Forms.DataGridView();
             this.panel39 = new System.Windows.Forms.Panel();
             this.panel50 = new System.Windows.Forms.Panel();
-            this.cbHKiem = new System.Windows.Forms.ComboBox();
+            this.cbDChu = new System.Windows.Forms.ComboBox();
             this.label33 = new System.Windows.Forms.Label();
             this.panel49 = new System.Windows.Forms.Panel();
             this.cbHKy = new System.Windows.Forms.ComboBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.panel48 = new System.Windows.Forms.Panel();
-            this.txbDTK = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.panel47 = new System.Windows.Forms.Panel();
-            this.txbDT = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.panel46 = new System.Windows.Forms.Panel();
-            this.txbTX2 = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.panel45 = new System.Windows.Forms.Panel();
-            this.txbTX1 = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
             this.panel44 = new System.Windows.Forms.Panel();
             this.cbTenMonD = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
+            this.panel48 = new System.Windows.Forms.Panel();
+            this.txbD4 = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.panel47 = new System.Windows.Forms.Panel();
+            this.txbTKet = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.panel46 = new System.Windows.Forms.Panel();
+            this.txbDThi = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.panel45 = new System.Windows.Forms.Panel();
+            this.txbTX = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
             this.panel40 = new System.Windows.Forms.Panel();
             this.cbTenLopD = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
@@ -180,12 +183,16 @@ namespace QLDiemSV
             this.panel43 = new System.Windows.Forms.Panel();
             this.txbMSVD = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.panel53 = new System.Windows.Forms.Panel();
-            this.cbTenKhoaL = new System.Windows.Forms.ComboBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.panel54 = new System.Windows.Forms.Panel();
-            this.cbTenLopMon = new System.Windows.Forms.ComboBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dsSVDF = new System.Windows.Forms.DataGridView();
             this.label36 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txbSVF = new System.Windows.Forms.TextBox();
+            this.dsSVA = new System.Windows.Forms.DataGridView();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.txbSVA = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
             this.tbAdmin.SuspendLayout();
             this.tbTTSV.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -237,22 +244,24 @@ namespace QLDiemSV
             this.panel35.SuspendLayout();
             this.tbDiem.SuspendLayout();
             this.panel51.SuspendLayout();
+            this.panel53.SuspendLayout();
             this.panel52.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsDiem)).BeginInit();
             this.panel39.SuspendLayout();
             this.panel50.SuspendLayout();
             this.panel49.SuspendLayout();
+            this.panel44.SuspendLayout();
             this.panel48.SuspendLayout();
             this.panel47.SuspendLayout();
             this.panel46.SuspendLayout();
             this.panel45.SuspendLayout();
-            this.panel44.SuspendLayout();
             this.panel40.SuspendLayout();
             this.panel41.SuspendLayout();
             this.panel42.SuspendLayout();
             this.panel43.SuspendLayout();
-            this.panel53.SuspendLayout();
-            this.panel54.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dsSVDF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsSVA)).BeginInit();
             this.SuspendLayout();
             // 
             // tbAdmin
@@ -263,12 +272,14 @@ namespace QLDiemSV
             this.tbAdmin.Controls.Add(this.tbLop);
             this.tbAdmin.Controls.Add(this.tbMonHoc);
             this.tbAdmin.Controls.Add(this.tbDiem);
+            this.tbAdmin.Controls.Add(this.tabPage1);
             this.tbAdmin.Location = new System.Drawing.Point(12, 12);
             this.tbAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbAdmin.Name = "tbAdmin";
             this.tbAdmin.SelectedIndex = 0;
             this.tbAdmin.Size = new System.Drawing.Size(1199, 532);
             this.tbAdmin.TabIndex = 0;
+            this.tbAdmin.Tag = "";
             // 
             // tbTTSV
             // 
@@ -443,7 +454,8 @@ namespace QLDiemSV
             this.cbGTSV.Items.AddRange(new object[] {
             "nam",
             "nu"});
-            this.cbGTSV.Location = new System.Drawing.Point(136, 8);
+            this.cbGTSV.Location = new System.Drawing.Point(136, 7);
+            this.cbGTSV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbGTSV.Name = "cbGTSV";
             this.cbGTSV.Size = new System.Drawing.Size(80, 24);
             this.cbGTSV.TabIndex = 2;
@@ -473,6 +485,7 @@ namespace QLDiemSV
             // 
             this.dtNSSV.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtNSSV.Location = new System.Drawing.Point(136, 6);
+            this.dtNSSV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtNSSV.Name = "dtNSSV";
             this.dtNSSV.Size = new System.Drawing.Size(223, 22);
             this.dtNSSV.TabIndex = 2;
@@ -714,7 +727,7 @@ namespace QLDiemSV
             // 
             // txbEmail
             // 
-            this.txbEmail.Location = new System.Drawing.Point(136, 8);
+            this.txbEmail.Location = new System.Drawing.Point(136, 7);
             this.txbEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.Size = new System.Drawing.Size(223, 22);
@@ -749,7 +762,8 @@ namespace QLDiemSV
             this.cbGTGV.Items.AddRange(new object[] {
             "nam",
             "nu"});
-            this.cbGTGV.Location = new System.Drawing.Point(136, 8);
+            this.cbGTGV.Location = new System.Drawing.Point(136, 7);
+            this.cbGTGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbGTGV.Name = "cbGTGV";
             this.cbGTGV.Size = new System.Drawing.Size(80, 24);
             this.cbGTGV.TabIndex = 3;
@@ -777,7 +791,7 @@ namespace QLDiemSV
             // 
             // txbNSGV
             // 
-            this.txbNSGV.Location = new System.Drawing.Point(136, 8);
+            this.txbNSGV.Location = new System.Drawing.Point(136, 7);
             this.txbNSGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbNSGV.Name = "txbNSGV";
             this.txbNSGV.Size = new System.Drawing.Size(223, 22);
@@ -1101,7 +1115,6 @@ namespace QLDiemSV
             // 
             // panel17
             // 
-            this.panel17.Controls.Add(this.panel53);
             this.panel17.Controls.Add(this.panel23);
             this.panel17.Controls.Add(this.panel24);
             this.panel17.Controls.Add(this.panel25);
@@ -1187,12 +1200,11 @@ namespace QLDiemSV
             "Ve chan dung",
             "Tieng anh 2",
             "Triet hoc"});
-            this.cbTenLop.Location = new System.Drawing.Point(136, 8);
+            this.cbTenLop.Location = new System.Drawing.Point(136, 7);
             this.cbTenLop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbTenLop.Name = "cbTenLop";
             this.cbTenLop.Size = new System.Drawing.Size(223, 24);
             this.cbTenLop.TabIndex = 5;
-            this.cbTenLop.SelectedValueChanged += new System.EventHandler(this.cbTenLop_SelectedValueChanged);
             // 
             // label12
             // 
@@ -1292,7 +1304,6 @@ namespace QLDiemSV
             // 
             // panel32
             // 
-            this.panel32.Controls.Add(this.panel54);
             this.panel32.Controls.Add(this.panel38);
             this.panel32.Controls.Add(this.panel33);
             this.panel32.Controls.Add(this.panel34);
@@ -1424,7 +1435,6 @@ namespace QLDiemSV
             this.cbTenMon.Name = "cbTenMon";
             this.cbTenMon.Size = new System.Drawing.Size(223, 24);
             this.cbTenMon.TabIndex = 4;
-            this.cbTenMon.SelectedValueChanged += new System.EventHandler(this.cbTenMon_SelectedValueChanged);
             // 
             // label17
             // 
@@ -1481,6 +1491,7 @@ namespace QLDiemSV
             // 
             // panel51
             // 
+            this.panel51.Controls.Add(this.panel53);
             this.panel51.Controls.Add(this.panel52);
             this.panel51.Controls.Add(this.dsDiem);
             this.panel51.Location = new System.Drawing.Point(459, 7);
@@ -1489,13 +1500,42 @@ namespace QLDiemSV
             this.panel51.Size = new System.Drawing.Size(733, 487);
             this.panel51.TabIndex = 7;
             // 
+            // panel53
+            // 
+            this.panel53.Controls.Add(this.label35);
+            this.panel53.Controls.Add(this.txbTimAdmin);
+            this.panel53.Location = new System.Drawing.Point(4, 2);
+            this.panel53.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel53.Name = "panel53";
+            this.panel53.Size = new System.Drawing.Size(391, 47);
+            this.panel53.TabIndex = 2;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(13, 15);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(113, 19);
+            this.label35.TabIndex = 3;
+            this.label35.Text = "Tên sinh viên";
+            // 
+            // txbTimAdmin
+            // 
+            this.txbTimAdmin.Location = new System.Drawing.Point(155, 12);
+            this.txbTimAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txbTimAdmin.Name = "txbTimAdmin";
+            this.txbTimAdmin.Size = new System.Drawing.Size(223, 22);
+            this.txbTimAdmin.TabIndex = 2;
+            this.txbTimAdmin.TextChanged += new System.EventHandler(this.txbTimAdmin_TextChanged);
+            // 
             // panel52
             // 
             this.panel52.Controls.Add(this.label34);
-            this.panel52.Location = new System.Drawing.Point(147, 2);
+            this.panel52.Location = new System.Drawing.Point(470, 2);
             this.panel52.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel52.Name = "panel52";
-            this.panel52.Size = new System.Drawing.Size(435, 47);
+            this.panel52.Size = new System.Drawing.Size(164, 47);
             this.panel52.TabIndex = 1;
             // 
             // label34
@@ -1504,7 +1544,7 @@ namespace QLDiemSV
             this.label34.Cursor = System.Windows.Forms.Cursors.No;
             this.label34.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label34.Location = new System.Drawing.Point(156, 7);
+            this.label34.Location = new System.Drawing.Point(3, 8);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(136, 29);
             this.label34.TabIndex = 1;
@@ -1520,16 +1560,17 @@ namespace QLDiemSV
             this.dsDiem.RowTemplate.Height = 24;
             this.dsDiem.Size = new System.Drawing.Size(725, 434);
             this.dsDiem.TabIndex = 0;
+            this.dsDiem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dsDiem_CellContentClick);
             // 
             // panel39
             // 
             this.panel39.Controls.Add(this.panel50);
             this.panel39.Controls.Add(this.panel49);
+            this.panel39.Controls.Add(this.panel44);
             this.panel39.Controls.Add(this.panel48);
             this.panel39.Controls.Add(this.panel47);
             this.panel39.Controls.Add(this.panel46);
             this.panel39.Controls.Add(this.panel45);
-            this.panel39.Controls.Add(this.panel44);
             this.panel39.Controls.Add(this.panel40);
             this.panel39.Controls.Add(this.panel41);
             this.panel39.Controls.Add(this.panel42);
@@ -1542,22 +1583,32 @@ namespace QLDiemSV
             // 
             // panel50
             // 
-            this.panel50.Controls.Add(this.cbHKiem);
+            this.panel50.Controls.Add(this.cbDChu);
             this.panel50.Controls.Add(this.label33);
-            this.panel50.Location = new System.Drawing.Point(125, 324);
+            this.panel50.Location = new System.Drawing.Point(116, 321);
             this.panel50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel50.Name = "panel50";
             this.panel50.Size = new System.Drawing.Size(227, 43);
             this.panel50.TabIndex = 13;
             // 
-            // cbHKiem
+            // cbDChu
             // 
-            this.cbHKiem.FormattingEnabled = true;
-            this.cbHKiem.Location = new System.Drawing.Point(101, 10);
-            this.cbHKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbHKiem.Name = "cbHKiem";
-            this.cbHKiem.Size = new System.Drawing.Size(115, 24);
-            this.cbHKiem.TabIndex = 4;
+            this.cbDChu.Enabled = false;
+            this.cbDChu.FormattingEnabled = true;
+            this.cbDChu.Items.AddRange(new object[] {
+            "A",
+            "B+",
+            "B",
+            "C+",
+            "C",
+            "D+",
+            "D",
+            "F"});
+            this.cbDChu.Location = new System.Drawing.Point(101, 10);
+            this.cbDChu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbDChu.Name = "cbDChu";
+            this.cbDChu.Size = new System.Drawing.Size(115, 24);
+            this.cbDChu.TabIndex = 4;
             // 
             // label33
             // 
@@ -1566,15 +1617,15 @@ namespace QLDiemSV
             this.label33.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.Location = new System.Drawing.Point(3, 14);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(81, 16);
+            this.label33.Size = new System.Drawing.Size(74, 16);
             this.label33.TabIndex = 2;
-            this.label33.Text = "Hạnh kiểm";
+            this.label33.Text = "Điểm chữ";
             // 
             // panel49
             // 
             this.panel49.Controls.Add(this.cbHKy);
             this.panel49.Controls.Add(this.label32);
-            this.panel49.Location = new System.Drawing.Point(125, 373);
+            this.panel49.Location = new System.Drawing.Point(116, 370);
             this.panel49.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel49.Name = "panel49";
             this.panel49.Size = new System.Drawing.Size(227, 43);
@@ -1583,6 +1634,15 @@ namespace QLDiemSV
             // cbHKy
             // 
             this.cbHKy.FormattingEnabled = true;
+            this.cbHKy.Items.AddRange(new object[] {
+            "Hoc ky I",
+            "Hoc ky II",
+            "Hoc ky III",
+            "Hoc ky IV",
+            "Hoc ky V",
+            "Hoc ky VI",
+            "Hoc ky VII",
+            "Hoc ky VIII"});
             this.cbHKy.Location = new System.Drawing.Point(101, 10);
             this.cbHKy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbHKy.Name = "cbHKy";
@@ -1600,127 +1660,11 @@ namespace QLDiemSV
             this.label32.TabIndex = 2;
             this.label32.Text = "Học kỳ";
             // 
-            // panel48
-            // 
-            this.panel48.Controls.Add(this.txbDTK);
-            this.panel48.Controls.Add(this.label31);
-            this.panel48.Location = new System.Drawing.Point(257, 274);
-            this.panel48.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel48.Name = "panel48";
-            this.panel48.Size = new System.Drawing.Size(163, 43);
-            this.panel48.TabIndex = 11;
-            // 
-            // txbDTK
-            // 
-            this.txbDTK.Location = new System.Drawing.Point(81, 10);
-            this.txbDTK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txbDTK.Name = "txbDTK";
-            this.txbDTK.Size = new System.Drawing.Size(71, 22);
-            this.txbDTK.TabIndex = 4;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Cursor = System.Windows.Forms.Cursors.No;
-            this.label31.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(3, 14);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(65, 16);
-            this.label31.TabIndex = 2;
-            this.label31.Text = "Điểm TK";
-            // 
-            // panel47
-            // 
-            this.panel47.Controls.Add(this.txbDT);
-            this.panel47.Controls.Add(this.label30);
-            this.panel47.Location = new System.Drawing.Point(257, 226);
-            this.panel47.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel47.Name = "panel47";
-            this.panel47.Size = new System.Drawing.Size(163, 43);
-            this.panel47.TabIndex = 10;
-            // 
-            // txbDT
-            // 
-            this.txbDT.Location = new System.Drawing.Point(81, 10);
-            this.txbDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txbDT.Name = "txbDT";
-            this.txbDT.Size = new System.Drawing.Size(71, 22);
-            this.txbDT.TabIndex = 4;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Cursor = System.Windows.Forms.Cursors.No;
-            this.label30.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(3, 14);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(65, 16);
-            this.label30.TabIndex = 2;
-            this.label30.Text = "Điểm thi";
-            // 
-            // panel46
-            // 
-            this.panel46.Controls.Add(this.txbTX2);
-            this.panel46.Controls.Add(this.label29);
-            this.panel46.Location = new System.Drawing.Point(25, 274);
-            this.panel46.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(163, 43);
-            this.panel46.TabIndex = 9;
-            // 
-            // txbTX2
-            // 
-            this.txbTX2.Location = new System.Drawing.Point(81, 10);
-            this.txbTX2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txbTX2.Name = "txbTX2";
-            this.txbTX2.Size = new System.Drawing.Size(71, 22);
-            this.txbTX2.TabIndex = 4;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Cursor = System.Windows.Forms.Cursors.No;
-            this.label29.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(3, 14);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(72, 16);
-            this.label29.TabIndex = 2;
-            this.label29.Text = "Điểm TX2";
-            // 
-            // panel45
-            // 
-            this.panel45.Controls.Add(this.txbTX1);
-            this.panel45.Controls.Add(this.label28);
-            this.panel45.Location = new System.Drawing.Point(25, 226);
-            this.panel45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel45.Name = "panel45";
-            this.panel45.Size = new System.Drawing.Size(163, 43);
-            this.panel45.TabIndex = 8;
-            // 
-            // txbTX1
-            // 
-            this.txbTX1.Location = new System.Drawing.Point(81, 10);
-            this.txbTX1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txbTX1.Name = "txbTX1";
-            this.txbTX1.Size = new System.Drawing.Size(71, 22);
-            this.txbTX1.TabIndex = 4;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Cursor = System.Windows.Forms.Cursors.No;
-            this.label28.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(3, 14);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(72, 16);
-            this.label28.TabIndex = 2;
-            this.label28.Text = "Điểm TX1";
-            // 
             // panel44
             // 
             this.panel44.Controls.Add(this.cbTenMonD);
             this.panel44.Controls.Add(this.label27);
-            this.panel44.Location = new System.Drawing.Point(3, 110);
+            this.panel44.Location = new System.Drawing.Point(3, 159);
             this.panel44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(435, 47);
@@ -1728,6 +1672,8 @@ namespace QLDiemSV
             // 
             // cbTenMonD
             // 
+            this.cbTenMonD.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbTenMonD.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbTenMonD.FormattingEnabled = true;
             this.cbTenMonD.Location = new System.Drawing.Point(136, 7);
             this.cbTenMonD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1746,11 +1692,131 @@ namespace QLDiemSV
             this.label27.TabIndex = 1;
             this.label27.Text = "Tên môn";
             // 
+            // panel48
+            // 
+            this.panel48.Controls.Add(this.txbD4);
+            this.panel48.Controls.Add(this.label31);
+            this.panel48.Location = new System.Drawing.Point(257, 274);
+            this.panel48.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel48.Name = "panel48";
+            this.panel48.Size = new System.Drawing.Size(163, 43);
+            this.panel48.TabIndex = 11;
+            // 
+            // txbD4
+            // 
+            this.txbD4.Enabled = false;
+            this.txbD4.Location = new System.Drawing.Point(81, 10);
+            this.txbD4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txbD4.Name = "txbD4";
+            this.txbD4.Size = new System.Drawing.Size(71, 22);
+            this.txbD4.TabIndex = 4;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Cursor = System.Windows.Forms.Cursors.No;
+            this.label31.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(3, 14);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(55, 16);
+            this.label31.TabIndex = 2;
+            this.label31.Text = "Điểm 4";
+            // 
+            // panel47
+            // 
+            this.panel47.Controls.Add(this.txbTKet);
+            this.panel47.Controls.Add(this.label30);
+            this.panel47.Location = new System.Drawing.Point(257, 226);
+            this.panel47.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel47.Name = "panel47";
+            this.panel47.Size = new System.Drawing.Size(163, 43);
+            this.panel47.TabIndex = 10;
+            // 
+            // txbTKet
+            // 
+            this.txbTKet.Enabled = false;
+            this.txbTKet.Location = new System.Drawing.Point(81, 10);
+            this.txbTKet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txbTKet.Name = "txbTKet";
+            this.txbTKet.Size = new System.Drawing.Size(71, 22);
+            this.txbTKet.TabIndex = 4;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Cursor = System.Windows.Forms.Cursors.No;
+            this.label30.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(3, 14);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(65, 16);
+            this.label30.TabIndex = 2;
+            this.label30.Text = "Điểm TK";
+            // 
+            // panel46
+            // 
+            this.panel46.Controls.Add(this.txbDThi);
+            this.panel46.Controls.Add(this.label29);
+            this.panel46.Location = new System.Drawing.Point(25, 274);
+            this.panel46.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel46.Name = "panel46";
+            this.panel46.Size = new System.Drawing.Size(163, 43);
+            this.panel46.TabIndex = 9;
+            // 
+            // txbDThi
+            // 
+            this.txbDThi.Location = new System.Drawing.Point(81, 10);
+            this.txbDThi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txbDThi.Name = "txbDThi";
+            this.txbDThi.Size = new System.Drawing.Size(71, 22);
+            this.txbDThi.TabIndex = 4;
+            this.txbDThi.TextChanged += new System.EventHandler(this.txbDThi_TextChanged);
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Cursor = System.Windows.Forms.Cursors.No;
+            this.label29.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(3, 14);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(68, 16);
+            this.label29.TabIndex = 2;
+            this.label29.Text = "Điểm Thi";
+            // 
+            // panel45
+            // 
+            this.panel45.Controls.Add(this.txbTX);
+            this.panel45.Controls.Add(this.label28);
+            this.panel45.Location = new System.Drawing.Point(25, 226);
+            this.panel45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel45.Name = "panel45";
+            this.panel45.Size = new System.Drawing.Size(163, 43);
+            this.panel45.TabIndex = 8;
+            // 
+            // txbTX
+            // 
+            this.txbTX.Location = new System.Drawing.Point(81, 10);
+            this.txbTX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txbTX.Name = "txbTX";
+            this.txbTX.Size = new System.Drawing.Size(71, 22);
+            this.txbTX.TabIndex = 4;
+            this.txbTX.TextChanged += new System.EventHandler(this.txbTX_TextChanged);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Cursor = System.Windows.Forms.Cursors.No;
+            this.label28.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(3, 14);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(64, 16);
+            this.label28.TabIndex = 2;
+            this.label28.Text = "Điểm TX";
+            // 
             // panel40
             // 
             this.panel40.Controls.Add(this.cbTenLopD);
             this.panel40.Controls.Add(this.label24);
-            this.panel40.Location = new System.Drawing.Point(3, 162);
+            this.panel40.Location = new System.Drawing.Point(3, 108);
             this.panel40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel40.Name = "panel40";
             this.panel40.Size = new System.Drawing.Size(435, 47);
@@ -1758,6 +1824,8 @@ namespace QLDiemSV
             // 
             // cbTenLopD
             // 
+            this.cbTenLopD.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbTenLopD.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbTenLopD.FormattingEnabled = true;
             this.cbTenLopD.Location = new System.Drawing.Point(136, 7);
             this.cbTenLopD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1808,6 +1876,7 @@ namespace QLDiemSV
             this.btnEditDiem.TabIndex = 2;
             this.btnEditDiem.Text = "Sửa";
             this.btnEditDiem.UseVisualStyleBackColor = true;
+            this.btnEditDiem.Click += new System.EventHandler(this.btnEditDiem_Click);
             // 
             // btnDeleteDiem
             // 
@@ -1818,6 +1887,7 @@ namespace QLDiemSV
             this.btnDeleteDiem.TabIndex = 1;
             this.btnDeleteDiem.Text = "Xóa";
             this.btnDeleteDiem.UseVisualStyleBackColor = true;
+            this.btnDeleteDiem.Click += new System.EventHandler(this.btnDeleteDiem_Click);
             // 
             // btnInsertDiem
             // 
@@ -1888,80 +1958,114 @@ namespace QLDiemSV
             this.label26.TabIndex = 1;
             this.label26.Text = "Mã sinh viên";
             // 
-            // panel53
+            // tabPage1
             // 
-            this.panel53.Controls.Add(this.cbTenKhoaL);
-            this.panel53.Controls.Add(this.label35);
-            this.panel53.Location = new System.Drawing.Point(3, 104);
-            this.panel53.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel53.Name = "panel53";
-            this.panel53.Size = new System.Drawing.Size(435, 47);
-            this.panel53.TabIndex = 6;
+            this.tabPage1.Controls.Add(this.label39);
+            this.tabPage1.Controls.Add(this.txbSVA);
+            this.tabPage1.Controls.Add(this.label38);
+            this.tabPage1.Controls.Add(this.label37);
+            this.tabPage1.Controls.Add(this.dsSVA);
+            this.tabPage1.Controls.Add(this.txbSVF);
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.label36);
+            this.tabPage1.Controls.Add(this.dsSVDF);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1191, 503);
+            this.tabPage1.TabIndex = 6;
+            this.tabPage1.Text = "Thống kê";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // cbTenKhoaL
+            // dsSVDF
             // 
-            this.cbTenKhoaL.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbTenKhoaL.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbTenKhoaL.FormattingEnabled = true;
-            this.cbTenKhoaL.Items.AddRange(new object[] {
-            "Cong nghe thong tin",
-            "Nang khieu",
-            "Ngon ngu",
-            "Quan tri"});
-            this.cbTenKhoaL.Location = new System.Drawing.Point(136, 7);
-            this.cbTenKhoaL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbTenKhoaL.Name = "cbTenKhoaL";
-            this.cbTenKhoaL.Size = new System.Drawing.Size(223, 24);
-            this.cbTenKhoaL.Sorted = true;
-            this.cbTenKhoaL.TabIndex = 3;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Cursor = System.Windows.Forms.Cursors.No;
-            this.label35.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(3, 11);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(71, 16);
-            this.label35.TabIndex = 1;
-            this.label35.Text = "Tên khoa";
-            // 
-            // panel54
-            // 
-            this.panel54.Controls.Add(this.cbTenLopMon);
-            this.panel54.Controls.Add(this.label36);
-            this.panel54.Location = new System.Drawing.Point(3, 161);
-            this.panel54.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel54.Name = "panel54";
-            this.panel54.Size = new System.Drawing.Size(435, 47);
-            this.panel54.TabIndex = 7;
-            // 
-            // cbTenLopMon
-            // 
-            this.cbTenLopMon.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbTenLopMon.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbTenLopMon.FormattingEnabled = true;
-            this.cbTenLopMon.Items.AddRange(new object[] {
-            "Lap trinh net",
-            "Ve chan dung",
-            "Tieng anh 2",
-            "Triet hoc"});
-            this.cbTenLopMon.Location = new System.Drawing.Point(136, 7);
-            this.cbTenLopMon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbTenLopMon.Name = "cbTenLopMon";
-            this.cbTenLopMon.Size = new System.Drawing.Size(223, 24);
-            this.cbTenLopMon.TabIndex = 4;
+            this.dsSVDF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dsSVDF.Location = new System.Drawing.Point(6, 51);
+            this.dsSVDF.Name = "dsSVDF";
+            this.dsSVDF.RowHeadersWidth = 51;
+            this.dsSVDF.RowTemplate.Height = 24;
+            this.dsSVDF.Size = new System.Drawing.Size(559, 355);
+            this.dsSVDF.TabIndex = 0;
             // 
             // label36
             // 
             this.label36.AutoSize = true;
             this.label36.Cursor = System.Windows.Forms.Cursors.No;
-            this.label36.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(3, 11);
+            this.label36.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label36.Location = new System.Drawing.Point(140, 19);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(60, 16);
-            this.label36.TabIndex = 1;
-            this.label36.Text = "Tên lớp";
+            this.label36.Size = new System.Drawing.Size(206, 29);
+            this.label36.TabIndex = 2;
+            this.label36.Text = "Sinh viên điểm F";
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Location = new System.Drawing.Point(6, 411);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(93, 30);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Tổng";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // txbSVF
+            // 
+            this.txbSVF.Enabled = false;
+            this.txbSVF.Location = new System.Drawing.Point(226, 474);
+            this.txbSVF.Name = "txbSVF";
+            this.txbSVF.Size = new System.Drawing.Size(100, 22);
+            this.txbSVF.TabIndex = 4;
+            // 
+            // dsSVA
+            // 
+            this.dsSVA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dsSVA.Location = new System.Drawing.Point(629, 51);
+            this.dsSVA.Name = "dsSVA";
+            this.dsSVA.RowHeadersWidth = 51;
+            this.dsSVA.RowTemplate.Height = 24;
+            this.dsSVA.Size = new System.Drawing.Size(559, 355);
+            this.dsSVA.TabIndex = 5;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(142, 477);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(56, 17);
+            this.label37.TabIndex = 6;
+            this.label37.Text = "Điểm F:";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(142, 424);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(57, 17);
+            this.label38.TabIndex = 7;
+            this.label38.Text = "Điểm A:";
+            // 
+            // txbSVA
+            // 
+            this.txbSVA.Enabled = false;
+            this.txbSVA.Location = new System.Drawing.Point(226, 421);
+            this.txbSVA.Name = "txbSVA";
+            this.txbSVA.Size = new System.Drawing.Size(100, 22);
+            this.txbSVA.TabIndex = 8;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Cursor = System.Windows.Forms.Cursors.No;
+            this.label39.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label39.Location = new System.Drawing.Point(779, 19);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(207, 29);
+            this.label39.TabIndex = 9;
+            this.label39.Text = "Sinh viên điểm A";
             // 
             // Admin
             // 
@@ -2047,6 +2151,8 @@ namespace QLDiemSV
             this.panel35.PerformLayout();
             this.tbDiem.ResumeLayout(false);
             this.panel51.ResumeLayout(false);
+            this.panel53.ResumeLayout(false);
+            this.panel53.PerformLayout();
             this.panel52.ResumeLayout(false);
             this.panel52.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsDiem)).EndInit();
@@ -2055,6 +2161,8 @@ namespace QLDiemSV
             this.panel50.PerformLayout();
             this.panel49.ResumeLayout(false);
             this.panel49.PerformLayout();
+            this.panel44.ResumeLayout(false);
+            this.panel44.PerformLayout();
             this.panel48.ResumeLayout(false);
             this.panel48.PerformLayout();
             this.panel47.ResumeLayout(false);
@@ -2063,8 +2171,6 @@ namespace QLDiemSV
             this.panel46.PerformLayout();
             this.panel45.ResumeLayout(false);
             this.panel45.PerformLayout();
-            this.panel44.ResumeLayout(false);
-            this.panel44.PerformLayout();
             this.panel40.ResumeLayout(false);
             this.panel40.PerformLayout();
             this.panel41.ResumeLayout(false);
@@ -2072,10 +2178,10 @@ namespace QLDiemSV
             this.panel42.PerformLayout();
             this.panel43.ResumeLayout(false);
             this.panel43.PerformLayout();
-            this.panel53.ResumeLayout(false);
-            this.panel53.PerformLayout();
-            this.panel54.ResumeLayout(false);
-            this.panel54.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dsSVDF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsSVA)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2203,22 +2309,22 @@ namespace QLDiemSV
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.ComboBox cbTenMon;
         private System.Windows.Forms.Panel panel50;
-        private System.Windows.Forms.ComboBox cbHKiem;
+        private System.Windows.Forms.ComboBox cbDChu;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Panel panel49;
         private System.Windows.Forms.ComboBox cbHKy;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Panel panel48;
-        private System.Windows.Forms.TextBox txbDTK;
+        private System.Windows.Forms.TextBox txbD4;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Panel panel47;
-        private System.Windows.Forms.TextBox txbDT;
+        private System.Windows.Forms.TextBox txbTKet;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Panel panel46;
-        private System.Windows.Forms.TextBox txbTX2;
+        private System.Windows.Forms.TextBox txbDThi;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Panel panel45;
-        private System.Windows.Forms.TextBox txbTX1;
+        private System.Windows.Forms.TextBox txbTX;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Panel panel44;
         private System.Windows.Forms.ComboBox cbTenMonD;
@@ -2234,10 +2340,17 @@ namespace QLDiemSV
         private System.Windows.Forms.TextBox txbNSGV;
         private System.Windows.Forms.ComboBox cbTenLop;
         private System.Windows.Forms.Panel panel53;
-        private System.Windows.Forms.ComboBox cbTenKhoaL;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Panel panel54;
-        private System.Windows.Forms.ComboBox cbTenLopMon;
+        private System.Windows.Forms.TextBox txbTimAdmin;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.DataGridView dsSVDF;
         private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txbSVF;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.TextBox txbSVA;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.DataGridView dsSVA;
     }
 }
