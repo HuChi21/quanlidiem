@@ -48,7 +48,7 @@ namespace QLDiemSV
             this.cbGTSV = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dtNSSV = new System.Windows.Forms.DateTimePicker();
+            this.dtNSSV = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txbTenSV = new System.Windows.Forms.TextBox();
@@ -120,9 +120,9 @@ namespace QLDiemSV
             this.txbMaLop = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.tbMonHoc = new System.Windows.Forms.TabPage();
-            this.panel36 = new System.Windows.Forms.Panel();
             this.panel37 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
+            this.panel36 = new System.Windows.Forms.Panel();
             this.dsMonHoc = new System.Windows.Forms.DataGridView();
             this.panel32 = new System.Windows.Forms.Panel();
             this.panel38 = new System.Windows.Forms.Panel();
@@ -141,11 +141,10 @@ namespace QLDiemSV
             this.label21 = new System.Windows.Forms.Label();
             this.tbDiem = new System.Windows.Forms.TabPage();
             this.panel51 = new System.Windows.Forms.Panel();
-            this.panel53 = new System.Windows.Forms.Panel();
-            this.label35 = new System.Windows.Forms.Label();
-            this.txbTimAdmin = new System.Windows.Forms.TextBox();
             this.panel52 = new System.Windows.Forms.Panel();
+            this.txbTimAdmin = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
             this.dsDiem = new System.Windows.Forms.DataGridView();
             this.panel39 = new System.Windows.Forms.Panel();
             this.panel50 = new System.Windows.Forms.Panel();
@@ -184,15 +183,15 @@ namespace QLDiemSV
             this.txbMSVD = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dsSVDF = new System.Windows.Forms.DataGridView();
-            this.label36 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.txbSVF = new System.Windows.Forms.TextBox();
-            this.dsSVA = new System.Windows.Forms.DataGridView();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.txbSVA = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
+            this.txbSVA = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.dsSVA = new System.Windows.Forms.DataGridView();
+            this.txbSVF = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label36 = new System.Windows.Forms.Label();
+            this.dsSVDF = new System.Windows.Forms.DataGridView();
             this.tbAdmin.SuspendLayout();
             this.tbTTSV.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -234,8 +233,8 @@ namespace QLDiemSV
             this.panel24.SuspendLayout();
             this.panel25.SuspendLayout();
             this.tbMonHoc.SuspendLayout();
-            this.panel36.SuspendLayout();
             this.panel37.SuspendLayout();
+            this.panel36.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsMonHoc)).BeginInit();
             this.panel32.SuspendLayout();
             this.panel38.SuspendLayout();
@@ -244,7 +243,6 @@ namespace QLDiemSV
             this.panel35.SuspendLayout();
             this.tbDiem.SuspendLayout();
             this.panel51.SuspendLayout();
-            this.panel53.SuspendLayout();
             this.panel52.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsDiem)).BeginInit();
             this.panel39.SuspendLayout();
@@ -260,8 +258,8 @@ namespace QLDiemSV
             this.panel42.SuspendLayout();
             this.panel43.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dsSVDF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsSVA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsSVDF)).BeginInit();
             this.SuspendLayout();
             // 
             // tbAdmin
@@ -298,57 +296,61 @@ namespace QLDiemSV
             // 
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.dsSV);
-            this.panel7.Location = new System.Drawing.Point(455, 9);
+            this.panel7.Location = new System.Drawing.Point(455, 2);
             this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(733, 487);
+            this.panel7.Size = new System.Drawing.Size(733, 501);
             this.panel7.TabIndex = 2;
             // 
             // panel8
             // 
+            this.panel8.BackColor = System.Drawing.Color.DarkCyan;
             this.panel8.Controls.Add(this.label6);
-            this.panel8.Location = new System.Drawing.Point(147, 2);
+            this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(435, 47);
+            this.panel8.Size = new System.Drawing.Size(736, 53);
             this.panel8.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Cursor = System.Windows.Forms.Cursors.No;
-            this.label6.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Location = new System.Drawing.Point(99, 7);
+            this.label6.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Yellow;
+            this.label6.Location = new System.Drawing.Point(187, 1);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(246, 29);
+            this.label6.Size = new System.Drawing.Size(381, 44);
             this.label6.TabIndex = 1;
             this.label6.Text = "Danh sách sinh viên";
             // 
             // dsSV
             // 
+            this.dsSV.AllowUserToAddRows = false;
+            this.dsSV.AllowUserToDeleteRows = false;
             this.dsSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dsSV.Location = new System.Drawing.Point(4, 53);
+            this.dsSV.Location = new System.Drawing.Point(0, 53);
             this.dsSV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dsSV.Name = "dsSV";
             this.dsSV.RowHeadersWidth = 51;
             this.dsSV.RowTemplate.Height = 24;
-            this.dsSV.Size = new System.Drawing.Size(725, 434);
+            this.dsSV.Size = new System.Drawing.Size(736, 448);
             this.dsSV.TabIndex = 0;
             this.dsSV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dsSV_CellContentClick);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Cyan;
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(5, 6);
+            this.panel1.Location = new System.Drawing.Point(0, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(443, 491);
+            this.panel1.Size = new System.Drawing.Size(460, 499);
             this.panel1.TabIndex = 1;
             // 
             // panel9
@@ -365,46 +367,58 @@ namespace QLDiemSV
             // 
             // btnThoatSV
             // 
+            this.btnThoatSV.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnThoatSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoatSV.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnThoatSV.Location = new System.Drawing.Point(307, 20);
             this.btnThoatSV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoatSV.Name = "btnThoatSV";
             this.btnThoatSV.Size = new System.Drawing.Size(93, 30);
             this.btnThoatSV.TabIndex = 3;
             this.btnThoatSV.Text = "Thoát";
-            this.btnThoatSV.UseVisualStyleBackColor = true;
+            this.btnThoatSV.UseVisualStyleBackColor = false;
             this.btnThoatSV.Click += new System.EventHandler(this.tbxThoatSV_Click);
             // 
             // btnEditSV
             // 
+            this.btnEditSV.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnEditSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditSV.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEditSV.Location = new System.Drawing.Point(205, 20);
             this.btnEditSV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditSV.Name = "btnEditSV";
             this.btnEditSV.Size = new System.Drawing.Size(93, 30);
             this.btnEditSV.TabIndex = 2;
             this.btnEditSV.Text = "Sửa";
-            this.btnEditSV.UseVisualStyleBackColor = true;
+            this.btnEditSV.UseVisualStyleBackColor = false;
             this.btnEditSV.Click += new System.EventHandler(this.btnEditSV_Click);
             // 
             // tbnDeleteSV
             // 
+            this.tbnDeleteSV.BackColor = System.Drawing.Color.DarkBlue;
+            this.tbnDeleteSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbnDeleteSV.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.tbnDeleteSV.Location = new System.Drawing.Point(107, 20);
             this.tbnDeleteSV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbnDeleteSV.Name = "tbnDeleteSV";
             this.tbnDeleteSV.Size = new System.Drawing.Size(93, 30);
             this.tbnDeleteSV.TabIndex = 1;
             this.tbnDeleteSV.Text = "Xóa";
-            this.tbnDeleteSV.UseVisualStyleBackColor = true;
+            this.tbnDeleteSV.UseVisualStyleBackColor = false;
             this.tbnDeleteSV.Click += new System.EventHandler(this.tbnDeleteSV_Click);
             // 
             // btnAddSV
             // 
+            this.btnAddSV.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnAddSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddSV.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAddSV.Location = new System.Drawing.Point(5, 20);
             this.btnAddSV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddSV.Name = "btnAddSV";
             this.btnAddSV.Size = new System.Drawing.Size(93, 30);
             this.btnAddSV.TabIndex = 0;
             this.btnAddSV.Text = "Thêm";
-            this.btnAddSV.UseVisualStyleBackColor = true;
+            this.btnAddSV.UseVisualStyleBackColor = false;
             this.btnAddSV.Click += new System.EventHandler(this.btnAddSV_Click);
             // 
             // panel6
@@ -432,7 +446,7 @@ namespace QLDiemSV
             this.label5.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(3, 11);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 16);
+            this.label5.Size = new System.Drawing.Size(51, 16);
             this.label5.TabIndex = 1;
             this.label5.Text = "Địa chỉ";
             // 
@@ -467,7 +481,7 @@ namespace QLDiemSV
             this.label4.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(3, 11);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 16);
+            this.label4.Size = new System.Drawing.Size(62, 16);
             this.label4.TabIndex = 1;
             this.label4.Text = "Giới tính";
             // 
@@ -483,12 +497,11 @@ namespace QLDiemSV
             // 
             // dtNSSV
             // 
-            this.dtNSSV.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtNSSV.Location = new System.Drawing.Point(136, 6);
+            this.dtNSSV.Location = new System.Drawing.Point(136, 8);
             this.dtNSSV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtNSSV.Name = "dtNSSV";
             this.dtNSSV.Size = new System.Drawing.Size(223, 22);
-            this.dtNSSV.TabIndex = 2;
+            this.dtNSSV.TabIndex = 3;
             // 
             // label3
             // 
@@ -497,7 +510,7 @@ namespace QLDiemSV
             this.label3.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(3, 11);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 16);
+            this.label3.Size = new System.Drawing.Size(69, 16);
             this.label3.TabIndex = 1;
             this.label3.Text = "Ngày sinh";
             // 
@@ -526,7 +539,7 @@ namespace QLDiemSV
             this.label2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 16);
+            this.label2.Size = new System.Drawing.Size(92, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên sinh viên";
             // 
@@ -555,7 +568,7 @@ namespace QLDiemSV
             this.label1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 16);
+            this.label1.Size = new System.Drawing.Size(87, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã sinh viên";
             // 
@@ -576,47 +589,49 @@ namespace QLDiemSV
             // 
             this.panel19.Controls.Add(this.panel20);
             this.panel19.Controls.Add(this.dsGV);
-            this.panel19.Location = new System.Drawing.Point(459, 9);
+            this.panel19.Location = new System.Drawing.Point(459, 2);
             this.panel19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(733, 487);
+            this.panel19.Size = new System.Drawing.Size(733, 501);
             this.panel19.TabIndex = 3;
             // 
             // panel20
             // 
+            this.panel20.BackColor = System.Drawing.Color.DarkCyan;
             this.panel20.Controls.Add(this.label14);
-            this.panel20.Location = new System.Drawing.Point(147, 2);
+            this.panel20.Location = new System.Drawing.Point(0, 0);
             this.panel20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(435, 47);
+            this.panel20.Size = new System.Drawing.Size(733, 54);
             this.panel20.TabIndex = 1;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Cursor = System.Windows.Forms.Cursors.No;
-            this.label14.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label14.Location = new System.Drawing.Point(99, 7);
+            this.label14.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Yellow;
+            this.label14.Location = new System.Drawing.Point(175, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(261, 29);
+            this.label14.Size = new System.Drawing.Size(404, 44);
             this.label14.TabIndex = 1;
             this.label14.Text = "Danh sách giảng viên";
             // 
             // dsGV
             // 
             this.dsGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dsGV.Location = new System.Drawing.Point(4, 53);
+            this.dsGV.Location = new System.Drawing.Point(0, 53);
             this.dsGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dsGV.Name = "dsGV";
             this.dsGV.RowHeadersWidth = 51;
             this.dsGV.RowTemplate.Height = 24;
-            this.dsGV.Size = new System.Drawing.Size(725, 434);
+            this.dsGV.Size = new System.Drawing.Size(736, 446);
             this.dsGV.TabIndex = 0;
             this.dsGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dsGV_CellContentClick);
             // 
             // panel10
             // 
+            this.panel10.BackColor = System.Drawing.Color.Cyan;
             this.panel10.Controls.Add(this.panel18);
             this.panel10.Controls.Add(this.panel11);
             this.panel10.Controls.Add(this.panel12);
@@ -624,10 +639,10 @@ namespace QLDiemSV
             this.panel10.Controls.Add(this.panel14);
             this.panel10.Controls.Add(this.panel15);
             this.panel10.Controls.Add(this.panel16);
-            this.panel10.Location = new System.Drawing.Point(5, 6);
+            this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(443, 491);
+            this.panel10.Size = new System.Drawing.Size(460, 501);
             this.panel10.TabIndex = 2;
             // 
             // panel18
@@ -655,7 +670,7 @@ namespace QLDiemSV
             this.label13.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(3, 11);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(100, 16);
+            this.label13.Size = new System.Drawing.Size(92, 16);
             this.label13.TabIndex = 1;
             this.label13.Text = "Số điện thoại";
             // 
@@ -673,46 +688,58 @@ namespace QLDiemSV
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkBlue;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(307, 20);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 30);
             this.button1.TabIndex = 3;
             this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnEditGV
             // 
+            this.btnEditGV.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnEditGV.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditGV.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEditGV.Location = new System.Drawing.Point(205, 20);
             this.btnEditGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditGV.Name = "btnEditGV";
             this.btnEditGV.Size = new System.Drawing.Size(93, 30);
             this.btnEditGV.TabIndex = 2;
             this.btnEditGV.Text = "Sửa";
-            this.btnEditGV.UseVisualStyleBackColor = true;
+            this.btnEditGV.UseVisualStyleBackColor = false;
             this.btnEditGV.Click += new System.EventHandler(this.btnEditGV_Click);
             // 
             // btnDeleteGV
             // 
+            this.btnDeleteGV.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnDeleteGV.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteGV.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnDeleteGV.Location = new System.Drawing.Point(107, 20);
             this.btnDeleteGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteGV.Name = "btnDeleteGV";
             this.btnDeleteGV.Size = new System.Drawing.Size(93, 30);
             this.btnDeleteGV.TabIndex = 1;
             this.btnDeleteGV.Text = "Xóa";
-            this.btnDeleteGV.UseVisualStyleBackColor = true;
+            this.btnDeleteGV.UseVisualStyleBackColor = false;
             this.btnDeleteGV.Click += new System.EventHandler(this.btnDeleteGV_Click);
             // 
             // btnInsertDV
             // 
+            this.btnInsertDV.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnInsertDV.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertDV.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnInsertDV.Location = new System.Drawing.Point(5, 20);
             this.btnInsertDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInsertDV.Name = "btnInsertDV";
             this.btnInsertDV.Size = new System.Drawing.Size(93, 30);
             this.btnInsertDV.TabIndex = 0;
             this.btnInsertDV.Text = "Thêm";
-            this.btnInsertDV.UseVisualStyleBackColor = true;
+            this.btnInsertDV.UseVisualStyleBackColor = false;
             this.btnInsertDV.Click += new System.EventHandler(this.btnInsertDV_Click);
             // 
             // panel12
@@ -740,7 +767,7 @@ namespace QLDiemSV
             this.label7.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(3, 11);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 16);
+            this.label7.Size = new System.Drawing.Size(43, 16);
             this.label7.TabIndex = 1;
             this.label7.Text = "Email";
             // 
@@ -775,7 +802,7 @@ namespace QLDiemSV
             this.label8.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(3, 11);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 16);
+            this.label8.Size = new System.Drawing.Size(62, 16);
             this.label8.TabIndex = 1;
             this.label8.Text = "Giới tính";
             // 
@@ -804,7 +831,7 @@ namespace QLDiemSV
             this.label9.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(3, 11);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(76, 16);
+            this.label9.Size = new System.Drawing.Size(69, 16);
             this.label9.TabIndex = 1;
             this.label9.Text = "Ngày sinh";
             // 
@@ -833,7 +860,7 @@ namespace QLDiemSV
             this.label10.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(3, 11);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(110, 16);
+            this.label10.Size = new System.Drawing.Size(102, 16);
             this.label10.TabIndex = 1;
             this.label10.Text = "Tên giảng viên";
             // 
@@ -862,7 +889,7 @@ namespace QLDiemSV
             this.label11.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(3, 11);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(106, 16);
+            this.label11.Size = new System.Drawing.Size(97, 16);
             this.label11.TabIndex = 1;
             this.label11.Text = "Mã giảng viên";
             // 
@@ -883,54 +910,56 @@ namespace QLDiemSV
             // 
             this.panel28.Controls.Add(this.panel29);
             this.panel28.Controls.Add(this.dsKhoa);
-            this.panel28.Location = new System.Drawing.Point(453, 7);
+            this.panel28.Location = new System.Drawing.Point(449, 2);
             this.panel28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(733, 487);
+            this.panel28.Size = new System.Drawing.Size(742, 499);
             this.panel28.TabIndex = 4;
             // 
             // panel29
             // 
+            this.panel29.BackColor = System.Drawing.Color.DarkCyan;
             this.panel29.Controls.Add(this.label20);
-            this.panel29.Location = new System.Drawing.Point(147, 2);
+            this.panel29.Location = new System.Drawing.Point(0, 0);
             this.panel29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(435, 47);
+            this.panel29.Size = new System.Drawing.Size(742, 56);
             this.panel29.TabIndex = 1;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Cursor = System.Windows.Forms.Cursors.No;
-            this.label20.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label20.Location = new System.Drawing.Point(99, 7);
+            this.label20.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Yellow;
+            this.label20.Location = new System.Drawing.Point(214, 5);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(197, 29);
+            this.label20.Size = new System.Drawing.Size(307, 44);
             this.label20.TabIndex = 1;
             this.label20.Text = "Danh sách khoa";
             // 
             // dsKhoa
             // 
             this.dsKhoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dsKhoa.Location = new System.Drawing.Point(4, 53);
+            this.dsKhoa.Location = new System.Drawing.Point(0, 53);
             this.dsKhoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dsKhoa.Name = "dsKhoa";
             this.dsKhoa.RowHeadersWidth = 51;
             this.dsKhoa.RowTemplate.Height = 24;
-            this.dsKhoa.Size = new System.Drawing.Size(725, 434);
+            this.dsKhoa.Size = new System.Drawing.Size(746, 446);
             this.dsKhoa.TabIndex = 0;
             this.dsKhoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dsKhoa_CellContentClick);
             // 
             // panel21
             // 
+            this.panel21.BackColor = System.Drawing.Color.Cyan;
             this.panel21.Controls.Add(this.panel22);
             this.panel21.Controls.Add(this.panel26);
             this.panel21.Controls.Add(this.panel27);
-            this.panel21.Location = new System.Drawing.Point(5, 7);
+            this.panel21.Location = new System.Drawing.Point(0, 2);
             this.panel21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(443, 491);
+            this.panel21.Size = new System.Drawing.Size(448, 499);
             this.panel21.TabIndex = 2;
             // 
             // panel22
@@ -947,46 +976,58 @@ namespace QLDiemSV
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.DarkBlue;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button5.Location = new System.Drawing.Point(307, 20);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(93, 30);
             this.button5.TabIndex = 3;
             this.button5.Text = "Thoát";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // btnEditKhoa
             // 
+            this.btnEditKhoa.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnEditKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditKhoa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEditKhoa.Location = new System.Drawing.Point(205, 20);
             this.btnEditKhoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditKhoa.Name = "btnEditKhoa";
             this.btnEditKhoa.Size = new System.Drawing.Size(93, 30);
             this.btnEditKhoa.TabIndex = 2;
             this.btnEditKhoa.Text = "Sửa";
-            this.btnEditKhoa.UseVisualStyleBackColor = true;
+            this.btnEditKhoa.UseVisualStyleBackColor = false;
             this.btnEditKhoa.Click += new System.EventHandler(this.btnEditKhoa_Click);
             // 
             // btnDeleteKhoa
             // 
+            this.btnDeleteKhoa.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnDeleteKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteKhoa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnDeleteKhoa.Location = new System.Drawing.Point(107, 20);
             this.btnDeleteKhoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteKhoa.Name = "btnDeleteKhoa";
             this.btnDeleteKhoa.Size = new System.Drawing.Size(93, 30);
             this.btnDeleteKhoa.TabIndex = 1;
             this.btnDeleteKhoa.Text = "Xóa";
-            this.btnDeleteKhoa.UseVisualStyleBackColor = true;
+            this.btnDeleteKhoa.UseVisualStyleBackColor = false;
             this.btnDeleteKhoa.Click += new System.EventHandler(this.btnDeleteKhoa_Click);
             // 
             // btnInsertKhoa
             // 
+            this.btnInsertKhoa.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnInsertKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertKhoa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnInsertKhoa.Location = new System.Drawing.Point(5, 20);
             this.btnInsertKhoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInsertKhoa.Name = "btnInsertKhoa";
             this.btnInsertKhoa.Size = new System.Drawing.Size(93, 30);
             this.btnInsertKhoa.TabIndex = 0;
             this.btnInsertKhoa.Text = "Thêm";
-            this.btnInsertKhoa.UseVisualStyleBackColor = true;
+            this.btnInsertKhoa.UseVisualStyleBackColor = false;
             this.btnInsertKhoa.Click += new System.EventHandler(this.btnInsertKhoa_Click);
             // 
             // panel26
@@ -1023,7 +1064,7 @@ namespace QLDiemSV
             this.label18.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(3, 11);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(71, 16);
+            this.label18.Size = new System.Drawing.Size(66, 16);
             this.label18.TabIndex = 1;
             this.label18.Text = "Tên khoa";
             // 
@@ -1052,7 +1093,7 @@ namespace QLDiemSV
             this.label19.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(3, 11);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(67, 16);
+            this.label19.Size = new System.Drawing.Size(61, 16);
             this.label19.TabIndex = 1;
             this.label19.Text = "Mã khoa";
             // 
@@ -1073,55 +1114,57 @@ namespace QLDiemSV
             // 
             this.panel30.Controls.Add(this.panel31);
             this.panel30.Controls.Add(this.dsLop);
-            this.panel30.Location = new System.Drawing.Point(455, 6);
+            this.panel30.Location = new System.Drawing.Point(455, 0);
             this.panel30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(733, 487);
+            this.panel30.Size = new System.Drawing.Size(736, 501);
             this.panel30.TabIndex = 5;
             // 
             // panel31
             // 
+            this.panel31.BackColor = System.Drawing.Color.DarkCyan;
             this.panel31.Controls.Add(this.label16);
-            this.panel31.Location = new System.Drawing.Point(147, 2);
+            this.panel31.Location = new System.Drawing.Point(-6, 0);
             this.panel31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(435, 47);
+            this.panel31.Size = new System.Drawing.Size(742, 56);
             this.panel31.TabIndex = 1;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Cursor = System.Windows.Forms.Cursors.No;
-            this.label16.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label16.Location = new System.Drawing.Point(99, 7);
+            this.label16.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Yellow;
+            this.label16.Location = new System.Drawing.Point(268, 2);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(180, 29);
+            this.label16.Size = new System.Drawing.Size(278, 44);
             this.label16.TabIndex = 1;
             this.label16.Text = "Danh sách lớp";
             // 
             // dsLop
             // 
             this.dsLop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dsLop.Location = new System.Drawing.Point(4, 53);
+            this.dsLop.Location = new System.Drawing.Point(0, 53);
             this.dsLop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dsLop.Name = "dsLop";
             this.dsLop.RowHeadersWidth = 51;
             this.dsLop.RowTemplate.Height = 24;
             this.dsLop.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dsLop.Size = new System.Drawing.Size(725, 434);
+            this.dsLop.Size = new System.Drawing.Size(736, 448);
             this.dsLop.TabIndex = 0;
             this.dsLop.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dsLop_CellContentClick);
             // 
             // panel17
             // 
+            this.panel17.BackColor = System.Drawing.Color.Cyan;
             this.panel17.Controls.Add(this.panel23);
             this.panel17.Controls.Add(this.panel24);
             this.panel17.Controls.Add(this.panel25);
-            this.panel17.Location = new System.Drawing.Point(5, 6);
+            this.panel17.Location = new System.Drawing.Point(0, 0);
             this.panel17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(443, 491);
+            this.panel17.Size = new System.Drawing.Size(453, 507);
             this.panel17.TabIndex = 3;
             // 
             // panel23
@@ -1138,46 +1181,58 @@ namespace QLDiemSV
             // 
             // button9
             // 
+            this.button9.BackColor = System.Drawing.Color.DarkBlue;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button9.Location = new System.Drawing.Point(307, 20);
             this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(93, 30);
             this.button9.TabIndex = 3;
             this.button9.Text = "Thoát";
-            this.button9.UseVisualStyleBackColor = true;
+            this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // btnEditLop
             // 
+            this.btnEditLop.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnEditLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditLop.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEditLop.Location = new System.Drawing.Point(205, 20);
             this.btnEditLop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditLop.Name = "btnEditLop";
             this.btnEditLop.Size = new System.Drawing.Size(93, 30);
             this.btnEditLop.TabIndex = 2;
             this.btnEditLop.Text = "Sửa";
-            this.btnEditLop.UseVisualStyleBackColor = true;
+            this.btnEditLop.UseVisualStyleBackColor = false;
             this.btnEditLop.Click += new System.EventHandler(this.btnEditLop_Click);
             // 
             // btnDeleteLop
             // 
+            this.btnDeleteLop.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnDeleteLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteLop.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnDeleteLop.Location = new System.Drawing.Point(107, 20);
             this.btnDeleteLop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteLop.Name = "btnDeleteLop";
             this.btnDeleteLop.Size = new System.Drawing.Size(93, 30);
             this.btnDeleteLop.TabIndex = 1;
             this.btnDeleteLop.Text = "Xóa";
-            this.btnDeleteLop.UseVisualStyleBackColor = true;
+            this.btnDeleteLop.UseVisualStyleBackColor = false;
             this.btnDeleteLop.Click += new System.EventHandler(this.btnDeleteLop_Click);
             // 
             // btnInsertLop
             // 
+            this.btnInsertLop.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnInsertLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertLop.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnInsertLop.Location = new System.Drawing.Point(5, 20);
             this.btnInsertLop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInsertLop.Name = "btnInsertLop";
             this.btnInsertLop.Size = new System.Drawing.Size(93, 30);
             this.btnInsertLop.TabIndex = 0;
             this.btnInsertLop.Text = "Thêm";
-            this.btnInsertLop.UseVisualStyleBackColor = true;
+            this.btnInsertLop.UseVisualStyleBackColor = false;
             this.btnInsertLop.Click += new System.EventHandler(this.btnInsertLop_Click);
             // 
             // panel24
@@ -1213,7 +1268,7 @@ namespace QLDiemSV
             this.label12.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(3, 11);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(60, 16);
+            this.label12.Size = new System.Drawing.Size(56, 16);
             this.label12.TabIndex = 1;
             this.label12.Text = "Tên lớp";
             // 
@@ -1242,12 +1297,13 @@ namespace QLDiemSV
             this.label15.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(3, 11);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(56, 16);
+            this.label15.Size = new System.Drawing.Size(51, 16);
             this.label15.TabIndex = 1;
             this.label15.Text = "Mã lớp";
             // 
             // tbMonHoc
             // 
+            this.tbMonHoc.Controls.Add(this.panel37);
             this.tbMonHoc.Controls.Add(this.panel36);
             this.tbMonHoc.Controls.Add(this.panel32);
             this.tbMonHoc.Location = new System.Drawing.Point(4, 25);
@@ -1259,59 +1315,60 @@ namespace QLDiemSV
             this.tbMonHoc.Text = "Môn học";
             this.tbMonHoc.UseVisualStyleBackColor = true;
             // 
-            // panel36
-            // 
-            this.panel36.Controls.Add(this.panel37);
-            this.panel36.Controls.Add(this.dsMonHoc);
-            this.panel36.Location = new System.Drawing.Point(455, 9);
-            this.panel36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(733, 487);
-            this.panel36.TabIndex = 6;
-            // 
             // panel37
             // 
+            this.panel37.BackColor = System.Drawing.Color.DarkCyan;
             this.panel37.Controls.Add(this.label22);
-            this.panel37.Location = new System.Drawing.Point(147, 2);
+            this.panel37.Location = new System.Drawing.Point(455, 0);
             this.panel37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(435, 47);
+            this.panel37.Size = new System.Drawing.Size(736, 56);
             this.panel37.TabIndex = 1;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Cursor = System.Windows.Forms.Cursors.No;
-            this.label22.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label22.Location = new System.Drawing.Point(99, 7);
+            this.label22.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Yellow;
+            this.label22.Location = new System.Drawing.Point(192, 9);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(242, 29);
+            this.label22.Size = new System.Drawing.Size(375, 44);
             this.label22.TabIndex = 1;
             this.label22.Text = "Danh sách môn học";
+            // 
+            // panel36
+            // 
+            this.panel36.Controls.Add(this.dsMonHoc);
+            this.panel36.Location = new System.Drawing.Point(455, 2);
+            this.panel36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel36.Name = "panel36";
+            this.panel36.Size = new System.Drawing.Size(740, 501);
+            this.panel36.TabIndex = 6;
             // 
             // dsMonHoc
             // 
             this.dsMonHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dsMonHoc.Location = new System.Drawing.Point(4, 53);
+            this.dsMonHoc.Location = new System.Drawing.Point(0, 53);
             this.dsMonHoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dsMonHoc.Name = "dsMonHoc";
             this.dsMonHoc.RowHeadersWidth = 51;
             this.dsMonHoc.RowTemplate.Height = 24;
-            this.dsMonHoc.Size = new System.Drawing.Size(725, 434);
+            this.dsMonHoc.Size = new System.Drawing.Size(736, 446);
             this.dsMonHoc.TabIndex = 0;
             this.dsMonHoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dsMonHoc_CellContentClick);
             // 
             // panel32
             // 
+            this.panel32.BackColor = System.Drawing.Color.Cyan;
             this.panel32.Controls.Add(this.panel38);
             this.panel32.Controls.Add(this.panel33);
             this.panel32.Controls.Add(this.panel34);
             this.panel32.Controls.Add(this.panel35);
-            this.panel32.Location = new System.Drawing.Point(5, 6);
+            this.panel32.Location = new System.Drawing.Point(0, 0);
             this.panel32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(443, 491);
+            this.panel32.Size = new System.Drawing.Size(453, 501);
             this.panel32.TabIndex = 4;
             // 
             // panel38
@@ -1350,7 +1407,7 @@ namespace QLDiemSV
             this.label23.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(3, 11);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(54, 16);
+            this.label23.Size = new System.Drawing.Size(49, 16);
             this.label23.TabIndex = 1;
             this.label23.Text = "Học kỳ";
             // 
@@ -1368,46 +1425,58 @@ namespace QLDiemSV
             // 
             // button13
             // 
+            this.button13.BackColor = System.Drawing.Color.DarkBlue;
+            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button13.Location = new System.Drawing.Point(307, 20);
             this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(93, 30);
             this.button13.TabIndex = 3;
             this.button13.Text = "Thoát";
-            this.button13.UseVisualStyleBackColor = true;
+            this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // btnEditMH
             // 
+            this.btnEditMH.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnEditMH.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditMH.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEditMH.Location = new System.Drawing.Point(205, 20);
             this.btnEditMH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditMH.Name = "btnEditMH";
             this.btnEditMH.Size = new System.Drawing.Size(93, 30);
             this.btnEditMH.TabIndex = 2;
             this.btnEditMH.Text = "Sửa";
-            this.btnEditMH.UseVisualStyleBackColor = true;
+            this.btnEditMH.UseVisualStyleBackColor = false;
             this.btnEditMH.Click += new System.EventHandler(this.btnEditMH_Click);
             // 
             // btnDeleteMH
             // 
+            this.btnDeleteMH.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnDeleteMH.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteMH.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnDeleteMH.Location = new System.Drawing.Point(107, 20);
             this.btnDeleteMH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteMH.Name = "btnDeleteMH";
             this.btnDeleteMH.Size = new System.Drawing.Size(93, 30);
             this.btnDeleteMH.TabIndex = 1;
             this.btnDeleteMH.Text = "Xóa";
-            this.btnDeleteMH.UseVisualStyleBackColor = true;
+            this.btnDeleteMH.UseVisualStyleBackColor = false;
             this.btnDeleteMH.Click += new System.EventHandler(this.btnDeleteMH_Click);
             // 
             // btnInsertMH
             // 
+            this.btnInsertMH.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnInsertMH.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertMH.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnInsertMH.Location = new System.Drawing.Point(5, 20);
             this.btnInsertMH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInsertMH.Name = "btnInsertMH";
             this.btnInsertMH.Size = new System.Drawing.Size(93, 30);
             this.btnInsertMH.TabIndex = 0;
             this.btnInsertMH.Text = "Thêm";
-            this.btnInsertMH.UseVisualStyleBackColor = true;
+            this.btnInsertMH.UseVisualStyleBackColor = false;
             this.btnInsertMH.Click += new System.EventHandler(this.btnInsertMH_Click);
             // 
             // panel34
@@ -1443,7 +1512,7 @@ namespace QLDiemSV
             this.label17.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(3, 11);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(67, 16);
+            this.label17.Size = new System.Drawing.Size(63, 16);
             this.label17.TabIndex = 1;
             this.label17.Text = "Tên môn";
             // 
@@ -1472,7 +1541,7 @@ namespace QLDiemSV
             this.label21.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(3, 11);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(63, 16);
+            this.label21.Size = new System.Drawing.Size(58, 16);
             this.label21.TabIndex = 1;
             this.label21.Text = "Mã môn";
             // 
@@ -1491,79 +1560,73 @@ namespace QLDiemSV
             // 
             // panel51
             // 
-            this.panel51.Controls.Add(this.panel53);
             this.panel51.Controls.Add(this.panel52);
             this.panel51.Controls.Add(this.dsDiem);
-            this.panel51.Location = new System.Drawing.Point(459, 7);
+            this.panel51.Location = new System.Drawing.Point(459, 0);
             this.panel51.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel51.Name = "panel51";
-            this.panel51.Size = new System.Drawing.Size(733, 487);
+            this.panel51.Size = new System.Drawing.Size(733, 507);
             this.panel51.TabIndex = 7;
             // 
-            // panel53
+            // panel52
             // 
-            this.panel53.Controls.Add(this.label35);
-            this.panel53.Controls.Add(this.txbTimAdmin);
-            this.panel53.Location = new System.Drawing.Point(4, 2);
-            this.panel53.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel53.Name = "panel53";
-            this.panel53.Size = new System.Drawing.Size(391, 47);
-            this.panel53.TabIndex = 2;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(13, 15);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(113, 19);
-            this.label35.TabIndex = 3;
-            this.label35.Text = "Tên sinh viên";
+            this.panel52.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel52.Controls.Add(this.txbTimAdmin);
+            this.panel52.Controls.Add(this.label34);
+            this.panel52.Controls.Add(this.label35);
+            this.panel52.Location = new System.Drawing.Point(0, 0);
+            this.panel52.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel52.Name = "panel52";
+            this.panel52.Size = new System.Drawing.Size(733, 56);
+            this.panel52.TabIndex = 1;
             // 
             // txbTimAdmin
             // 
-            this.txbTimAdmin.Location = new System.Drawing.Point(155, 12);
+            this.txbTimAdmin.Location = new System.Drawing.Point(140, 24);
             this.txbTimAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbTimAdmin.Name = "txbTimAdmin";
             this.txbTimAdmin.Size = new System.Drawing.Size(223, 22);
             this.txbTimAdmin.TabIndex = 2;
             this.txbTimAdmin.TextChanged += new System.EventHandler(this.txbTimAdmin_TextChanged);
             // 
-            // panel52
-            // 
-            this.panel52.Controls.Add(this.label34);
-            this.panel52.Location = new System.Drawing.Point(470, 2);
-            this.panel52.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel52.Name = "panel52";
-            this.panel52.Size = new System.Drawing.Size(164, 47);
-            this.panel52.TabIndex = 1;
-            // 
             // label34
             // 
             this.label34.AutoSize = true;
             this.label34.Cursor = System.Windows.Forms.Cursors.No;
-            this.label34.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label34.Location = new System.Drawing.Point(3, 8);
+            this.label34.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.Yellow;
+            this.label34.Location = new System.Drawing.Point(481, 7);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(136, 29);
+            this.label34.Size = new System.Drawing.Size(210, 44);
             this.label34.TabIndex = 1;
             this.label34.Text = "Bảng điểm";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.Yellow;
+            this.label35.Location = new System.Drawing.Point(4, 27);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(113, 19);
+            this.label35.TabIndex = 3;
+            this.label35.Text = "Tên sinh viên";
             // 
             // dsDiem
             // 
             this.dsDiem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dsDiem.Location = new System.Drawing.Point(4, 53);
+            this.dsDiem.Location = new System.Drawing.Point(0, 53);
             this.dsDiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dsDiem.Name = "dsDiem";
             this.dsDiem.RowHeadersWidth = 51;
             this.dsDiem.RowTemplate.Height = 24;
-            this.dsDiem.Size = new System.Drawing.Size(725, 434);
+            this.dsDiem.Size = new System.Drawing.Size(733, 452);
             this.dsDiem.TabIndex = 0;
             this.dsDiem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dsDiem_CellContentClick);
             // 
             // panel39
             // 
+            this.panel39.BackColor = System.Drawing.Color.Cyan;
             this.panel39.Controls.Add(this.panel50);
             this.panel39.Controls.Add(this.panel49);
             this.panel39.Controls.Add(this.panel44);
@@ -1575,10 +1638,10 @@ namespace QLDiemSV
             this.panel39.Controls.Add(this.panel41);
             this.panel39.Controls.Add(this.panel42);
             this.panel39.Controls.Add(this.panel43);
-            this.panel39.Location = new System.Drawing.Point(5, 4);
+            this.panel39.Location = new System.Drawing.Point(-4, 0);
             this.panel39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(443, 491);
+            this.panel39.Size = new System.Drawing.Size(461, 507);
             this.panel39.TabIndex = 5;
             // 
             // panel50
@@ -1617,7 +1680,7 @@ namespace QLDiemSV
             this.label33.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.Location = new System.Drawing.Point(3, 14);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(74, 16);
+            this.label33.Size = new System.Drawing.Size(68, 16);
             this.label33.TabIndex = 2;
             this.label33.Text = "Điểm chữ";
             // 
@@ -1656,7 +1719,7 @@ namespace QLDiemSV
             this.label32.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.Location = new System.Drawing.Point(3, 14);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(54, 16);
+            this.label32.Size = new System.Drawing.Size(49, 16);
             this.label32.TabIndex = 2;
             this.label32.Text = "Học kỳ";
             // 
@@ -1688,7 +1751,7 @@ namespace QLDiemSV
             this.label27.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(3, 11);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(67, 16);
+            this.label27.Size = new System.Drawing.Size(63, 16);
             this.label27.TabIndex = 1;
             this.label27.Text = "Tên môn";
             // 
@@ -1718,7 +1781,7 @@ namespace QLDiemSV
             this.label31.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(3, 14);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(55, 16);
+            this.label31.Size = new System.Drawing.Size(51, 16);
             this.label31.TabIndex = 2;
             this.label31.Text = "Điểm 4";
             // 
@@ -1748,7 +1811,7 @@ namespace QLDiemSV
             this.label30.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.Location = new System.Drawing.Point(3, 14);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(65, 16);
+            this.label30.Size = new System.Drawing.Size(61, 16);
             this.label30.TabIndex = 2;
             this.label30.Text = "Điểm TK";
             // 
@@ -1778,7 +1841,7 @@ namespace QLDiemSV
             this.label29.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(3, 14);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(68, 16);
+            this.label29.Size = new System.Drawing.Size(64, 16);
             this.label29.TabIndex = 2;
             this.label29.Text = "Điểm Thi";
             // 
@@ -1808,7 +1871,7 @@ namespace QLDiemSV
             this.label28.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(3, 14);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(64, 16);
+            this.label28.Size = new System.Drawing.Size(61, 16);
             this.label28.TabIndex = 2;
             this.label28.Text = "Điểm TX";
             // 
@@ -1840,7 +1903,7 @@ namespace QLDiemSV
             this.label24.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(3, 11);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(60, 16);
+            this.label24.Size = new System.Drawing.Size(56, 16);
             this.label24.TabIndex = 1;
             this.label24.Text = "Tên lớp";
             // 
@@ -1858,46 +1921,58 @@ namespace QLDiemSV
             // 
             // button17
             // 
+            this.button17.BackColor = System.Drawing.Color.DarkBlue;
+            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button17.Location = new System.Drawing.Point(307, 20);
             this.button17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(93, 30);
             this.button17.TabIndex = 3;
             this.button17.Text = "Thoát";
-            this.button17.UseVisualStyleBackColor = true;
+            this.button17.UseVisualStyleBackColor = false;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // btnEditDiem
             // 
+            this.btnEditDiem.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnEditDiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditDiem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEditDiem.Location = new System.Drawing.Point(205, 20);
             this.btnEditDiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditDiem.Name = "btnEditDiem";
             this.btnEditDiem.Size = new System.Drawing.Size(93, 30);
             this.btnEditDiem.TabIndex = 2;
             this.btnEditDiem.Text = "Sửa";
-            this.btnEditDiem.UseVisualStyleBackColor = true;
+            this.btnEditDiem.UseVisualStyleBackColor = false;
             this.btnEditDiem.Click += new System.EventHandler(this.btnEditDiem_Click);
             // 
             // btnDeleteDiem
             // 
+            this.btnDeleteDiem.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnDeleteDiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteDiem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnDeleteDiem.Location = new System.Drawing.Point(107, 20);
             this.btnDeleteDiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteDiem.Name = "btnDeleteDiem";
             this.btnDeleteDiem.Size = new System.Drawing.Size(93, 30);
             this.btnDeleteDiem.TabIndex = 1;
             this.btnDeleteDiem.Text = "Xóa";
-            this.btnDeleteDiem.UseVisualStyleBackColor = true;
+            this.btnDeleteDiem.UseVisualStyleBackColor = false;
             this.btnDeleteDiem.Click += new System.EventHandler(this.btnDeleteDiem_Click);
             // 
             // btnInsertDiem
             // 
+            this.btnInsertDiem.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnInsertDiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertDiem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnInsertDiem.Location = new System.Drawing.Point(5, 20);
             this.btnInsertDiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInsertDiem.Name = "btnInsertDiem";
             this.btnInsertDiem.Size = new System.Drawing.Size(93, 30);
             this.btnInsertDiem.TabIndex = 0;
             this.btnInsertDiem.Text = "Thêm";
-            this.btnInsertDiem.UseVisualStyleBackColor = true;
+            this.btnInsertDiem.UseVisualStyleBackColor = false;
             this.btnInsertDiem.Click += new System.EventHandler(this.btnInsertDiem_Click);
             // 
             // panel42
@@ -1925,7 +2000,7 @@ namespace QLDiemSV
             this.label25.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(3, 11);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(101, 16);
+            this.label25.Size = new System.Drawing.Size(92, 16);
             this.label25.TabIndex = 1;
             this.label25.Text = "Tên sinh viên";
             // 
@@ -1954,12 +2029,13 @@ namespace QLDiemSV
             this.label26.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(3, 11);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(97, 16);
+            this.label26.Size = new System.Drawing.Size(87, 16);
             this.label26.TabIndex = 1;
             this.label26.Text = "Mã sinh viên";
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.Cyan;
             this.tabPage1.Controls.Add(this.label39);
             this.tabPage1.Controls.Add(this.txbSVA);
             this.tabPage1.Controls.Add(this.label38);
@@ -1975,49 +2051,46 @@ namespace QLDiemSV
             this.tabPage1.Size = new System.Drawing.Size(1191, 503);
             this.tabPage1.TabIndex = 6;
             this.tabPage1.Text = "Thống kê";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // dsSVDF
+            // label39
             // 
-            this.dsSVDF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dsSVDF.Location = new System.Drawing.Point(6, 51);
-            this.dsSVDF.Name = "dsSVDF";
-            this.dsSVDF.RowHeadersWidth = 51;
-            this.dsSVDF.RowTemplate.Height = 24;
-            this.dsSVDF.Size = new System.Drawing.Size(559, 355);
-            this.dsSVDF.TabIndex = 0;
+            this.label39.AutoSize = true;
+            this.label39.Cursor = System.Windows.Forms.Cursors.No;
+            this.label39.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.Black;
+            this.label39.Location = new System.Drawing.Point(742, 6);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(318, 44);
+            this.label39.TabIndex = 9;
+            this.label39.Text = "Sinh viên điểm A";
             // 
-            // label36
+            // txbSVA
             // 
-            this.label36.AutoSize = true;
-            this.label36.Cursor = System.Windows.Forms.Cursors.No;
-            this.label36.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label36.Location = new System.Drawing.Point(140, 19);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(206, 29);
-            this.label36.TabIndex = 2;
-            this.label36.Text = "Sinh viên điểm F";
+            this.txbSVA.Enabled = false;
+            this.txbSVA.Location = new System.Drawing.Point(226, 421);
+            this.txbSVA.Name = "txbSVA";
+            this.txbSVA.Size = new System.Drawing.Size(100, 22);
+            this.txbSVA.TabIndex = 8;
             // 
-            // button2
+            // label38
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(6, 411);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 30);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Tổng";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(142, 424);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(67, 18);
+            this.label38.TabIndex = 7;
+            this.label38.Text = "Điểm A:";
             // 
-            // txbSVF
+            // label37
             // 
-            this.txbSVF.Enabled = false;
-            this.txbSVF.Location = new System.Drawing.Point(226, 474);
-            this.txbSVF.Name = "txbSVF";
-            this.txbSVF.Size = new System.Drawing.Size(100, 22);
-            this.txbSVF.TabIndex = 4;
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(142, 477);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(67, 18);
+            this.label37.TabIndex = 6;
+            this.label37.Text = "Điểm F:";
             // 
             // dsSVA
             // 
@@ -2029,43 +2102,50 @@ namespace QLDiemSV
             this.dsSVA.Size = new System.Drawing.Size(559, 355);
             this.dsSVA.TabIndex = 5;
             // 
-            // label37
+            // txbSVF
             // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(142, 477);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(56, 17);
-            this.label37.TabIndex = 6;
-            this.label37.Text = "Điểm F:";
+            this.txbSVF.Enabled = false;
+            this.txbSVF.Location = new System.Drawing.Point(226, 474);
+            this.txbSVF.Name = "txbSVF";
+            this.txbSVF.Size = new System.Drawing.Size(100, 22);
+            this.txbSVF.TabIndex = 4;
             // 
-            // label38
+            // button2
             // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(142, 424);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(57, 17);
-            this.label38.TabIndex = 7;
-            this.label38.Text = "Điểm A:";
+            this.button2.BackColor = System.Drawing.Color.DarkBlue;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Location = new System.Drawing.Point(17, 444);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(93, 30);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Tổng";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // txbSVA
+            // label36
             // 
-            this.txbSVA.Enabled = false;
-            this.txbSVA.Location = new System.Drawing.Point(226, 421);
-            this.txbSVA.Name = "txbSVA";
-            this.txbSVA.Size = new System.Drawing.Size(100, 22);
-            this.txbSVA.TabIndex = 8;
+            this.label36.AutoSize = true;
+            this.label36.Cursor = System.Windows.Forms.Cursors.No;
+            this.label36.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label36.Location = new System.Drawing.Point(115, 6);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(315, 44);
+            this.label36.TabIndex = 2;
+            this.label36.Text = "Sinh viên điểm F";
             // 
-            // label39
+            // dsSVDF
             // 
-            this.label39.AutoSize = true;
-            this.label39.Cursor = System.Windows.Forms.Cursors.No;
-            this.label39.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label39.Location = new System.Drawing.Point(779, 19);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(207, 29);
-            this.label39.TabIndex = 9;
-            this.label39.Text = "Sinh viên điểm A";
+            this.dsSVDF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dsSVDF.Location = new System.Drawing.Point(6, 51);
+            this.dsSVDF.Name = "dsSVDF";
+            this.dsSVDF.RowHeadersWidth = 51;
+            this.dsSVDF.RowTemplate.Height = 24;
+            this.dsSVDF.Size = new System.Drawing.Size(559, 355);
+            this.dsSVDF.TabIndex = 0;
             // 
             // Admin
             // 
@@ -2137,9 +2217,9 @@ namespace QLDiemSV
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
             this.tbMonHoc.ResumeLayout(false);
-            this.panel36.ResumeLayout(false);
             this.panel37.ResumeLayout(false);
             this.panel37.PerformLayout();
+            this.panel36.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dsMonHoc)).EndInit();
             this.panel32.ResumeLayout(false);
             this.panel38.ResumeLayout(false);
@@ -2151,8 +2231,6 @@ namespace QLDiemSV
             this.panel35.PerformLayout();
             this.tbDiem.ResumeLayout(false);
             this.panel51.ResumeLayout(false);
-            this.panel53.ResumeLayout(false);
-            this.panel53.PerformLayout();
             this.panel52.ResumeLayout(false);
             this.panel52.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsDiem)).EndInit();
@@ -2180,8 +2258,8 @@ namespace QLDiemSV
             this.panel43.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dsSVDF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsSVA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsSVDF)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2334,12 +2412,10 @@ namespace QLDiemSV
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.DataGridView dsDiem;
         private System.Windows.Forms.TextBox txbEmail;
-        private System.Windows.Forms.DateTimePicker dtNSSV;
         private System.Windows.Forms.ComboBox cbGTSV;
         private System.Windows.Forms.ComboBox cbGTGV;
         private System.Windows.Forms.TextBox txbNSGV;
         private System.Windows.Forms.ComboBox cbTenLop;
-        private System.Windows.Forms.Panel panel53;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.TextBox txbTimAdmin;
         private System.Windows.Forms.TabPage tabPage1;
@@ -2352,5 +2428,6 @@ namespace QLDiemSV
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.DataGridView dsSVA;
+        private System.Windows.Forms.TextBox dtNSSV;
     }
 }

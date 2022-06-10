@@ -65,7 +65,7 @@ namespace QLDiemSV
         }
         void LoadMonHocIntoCombobox(ComboBox cb)
         {
-            cb.DataSource = RangBuocDAO.Instance.GetListRangBuoc();
+            cb.DataSource = MonHocDAO.Instance.GetListMonHoc();
             cb.DisplayMember = "Tenmon";
         }
         void LoadHocKyIntoCombobox(ComboBox cb)
@@ -163,41 +163,48 @@ namespace QLDiemSV
         //Sinh Vien
         private void btnAddSV_Click(object sender, EventArgs e)
         {
-            string masv = txbMSV.Text;
-            string tensv = txbTenSV.Text;
-            string ngaysinhsv = dtNSSV.Text;
-            string gioitinhsv = cbGTSV.Text;
-            string diachisv = txbDiaChiSV.Text;
+            try
+            {
+                string masv = txbMSV.Text;
+                string tensv = txbTenSV.Text;
+                string ngaysinhsv = dtNSSV.Text;
+                string gioitinhsv = cbGTSV.Text;
+                string diachisv = txbDiaChiSV.Text;
 
-            if (masv.Equals(""))
-            {
-                MessageBox.Show("Mã sinh viên không được để trống");
+                if (masv.Equals(""))
+                {
+                    MessageBox.Show("Mã sinh viên không được để trống");
+                }
+                else if (tensv.Equals(""))
+                {
+                    MessageBox.Show("Tên sinh viên không được để trống");
+                }
+                else if (ngaysinhsv.Equals(""))
+                {
+                    MessageBox.Show("Ngày sinh  không được để trống");
+                }
+                else if (gioitinhsv.Equals(""))
+                {
+                    MessageBox.Show("Giới tính không được để trống");
+                }
+                else if (diachisv.Equals(""))
+                {
+                    MessageBox.Show("Địa chỉ không được để trống");
+                }
+                else if (SinhVienDAO.Instance.InsertSV(masv, tensv, ngaysinhsv, gioitinhsv, diachisv))
+                {
+                    MessageBox.Show("Thêm sinh viên thành công");
+                    loadsinhvien();
+
+                }
+                else
+                {
+                    MessageBox.Show("Có lỗi khi thêm sinh viên");
+                }
             }
-            else if (tensv.Equals(""))
+            catch
             {
-                MessageBox.Show("Tên sinh viên không được để trống");
-            }
-            else if (ngaysinhsv.Equals(""))
-            {
-                MessageBox.Show("Ngày sinh  không được để trống");
-            }
-            else if (gioitinhsv.Equals(""))
-            {
-                MessageBox.Show("Giới tính không được để trống");
-            }
-            else if (diachisv.Equals(""))
-            {
-                MessageBox.Show("Địa chỉ không được để trống");
-            }
-            else if (SinhVienDAO.Instance.InsertSV(masv, tensv, ngaysinhsv, gioitinhsv, diachisv))
-            {
-                MessageBox.Show("Thêm sinh viên thành công");
-                loadsinhvien();
-                
-            }
-            else
-            {
-                MessageBox.Show("Có lỗi khi thêm sinh viên");
+                MessageBox.Show("Đã tồn tại mã sinh viên");
             }
         }
 
@@ -252,70 +259,91 @@ namespace QLDiemSV
 
         private void btnInsertDV_Click(object sender, EventArgs e)
         {
-            string magv = txbMGV.Text;
-            string tengv = txbTenGV.Text;
-            string ngaysinhgv = txbNSGV.Text;
-            string gioitinhgv = cbGTGV.Text;
-            string email = txbEmail.Text;
-            string sdt = txbSDT.Text;
-            if (magv.Equals(""))
+            try
             {
-                MessageBox.Show("Mã giảng viên không được để trống");
-            }
-            else if (tengv.Equals(""))
-            {
-                MessageBox.Show("Tên giảng viên không được để trống");
-            }
-            else if (ngaysinhgv.Equals(""))
-            {
-                MessageBox.Show("Ngày sinh  không được để trống");
-            }
-            else if (gioitinhgv.Equals(""))
-            {
-                MessageBox.Show("Giới tính không được để trống");
-            }
-            else if (email.Equals(""))
-            {
-                MessageBox.Show("Email không được để trống");
-            }
-            else if (sdt.Equals(""))
-            {
-                MessageBox.Show("Số điện thoại không được để trống");
-            }
-            else if (GiangVienDAO.Instance.InsertGV(magv,tengv, ngaysinhgv, gioitinhgv,email, sdt))
-            {
-                MessageBox.Show("Thêm giảng viên thành công");
-                loadGiangVien();
+                string magv = txbMGV.Text;
+                string tengv = txbTenGV.Text;
+                string ngaysinhgv = txbNSGV.Text;
+                string gioitinhgv = cbGTGV.Text;
+                string email = txbEmail.Text;
+                string sdt = txbSDT.Text;
+                if (magv.Equals(""))
+                {
+                    MessageBox.Show("Mã giảng viên không được để trống");
+                }
+                else if (tengv.Equals(""))
+                {
+                    MessageBox.Show("Tên giảng viên không được để trống");
+                }
+                else if (ngaysinhgv.Equals(""))
+                {
+                    MessageBox.Show("Ngày sinh  không được để trống");
+                }
+                else if (gioitinhgv.Equals(""))
+                {
+                    MessageBox.Show("Giới tính không được để trống");
+                }
+                else if (email.Equals(""))
+                {
+                    MessageBox.Show("Email không được để trống");
+                }
+                else if (sdt.Equals(""))
+                {
+                    MessageBox.Show("Số điện thoại không được để trống");
+                }
+                else if (GiangVienDAO.Instance.InsertGV(magv, tengv, ngaysinhgv, gioitinhgv, email, sdt))
+                {
+                    MessageBox.Show("Thêm giảng viên thành công");
+                    loadGiangVien();
 
+                }
+                else
+                {
+                    MessageBox.Show("Có lỗi khi thêm giảng viên");
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Có lỗi khi thêm giảng viên");
+                MessageBox.Show("Đã tồn tại mã giảng viên");
             }
         }
 
         private void btnInsertLop_Click(object sender, EventArgs e)
         {
-            string malop = txbMaLop.Text;
-            string tenlop = cbTenLop.Text;
+            try
+            {
+                string malop = txbMaLop.Text;
+                string tenlop = cbTenLop.Text;
+                int i;
+                i = dsLop.CurrentRow.Index;
+                txbMaLop.Text = dsLop.Rows[i].Cells[0].Value.ToString();
+                cbTenLop.Text = dsLop.Rows[i].Cells[1].Value.ToString();
+                if (tenlop == cbTenLop.Text)
+                {
+                    MessageBox.Show("Đã tồn tại tên lớp");
+                }else
+                if (malop.Equals(""))
+                {
+                    MessageBox.Show("Mã lớp không được để trống");
+                }
+                else if (tenlop.Equals(""))
+                {
+                    MessageBox.Show("Tên lớp không được để trống");
+                }
+                else if (LopDAO.Instance.InsertLop(malop, tenlop))
+                {
+                    MessageBox.Show("Thêm lớp thành công");
+                    loadLop();
 
-            if (malop.Equals(""))
-            {
-                MessageBox.Show("Mã lớp không được để trống");
+                }
+                else
+                {
+                    MessageBox.Show("Có lỗi khi thêm lớp");
+                }
             }
-            else if (tenlop.Equals(""))
+            catch
             {
-                MessageBox.Show("Tên lớp không được để trống");
-            }
-            else if (LopDAO.Instance.InsertLop(malop,tenlop))
-            {
-                MessageBox.Show("Thêm lớp thành công");
-                loadLop();
-
-            }
-            else
-            {
-                MessageBox.Show("Có lỗi khi thêm lớp");
+                MessageBox.Show("Đã tồn tại mã lớp");
             }
         }
 
@@ -442,26 +470,41 @@ namespace QLDiemSV
 
         private void btnInsertKhoa_Click(object sender, EventArgs e)
         {
-            string makhoa = txbMaKhoa.Text;
-            string tenkhoa = cbTenKhoa.Text;
+           
+            try
+            {
+                string makhoa = txbMaKhoa.Text;
+                string tenkhoa = cbTenKhoa.Text;
+                int i;
+                i = dsKhoa.CurrentRow.Index;
+                cbTenKhoa.Text = dsKhoa.Rows[i].Cells[1].Value.ToString();
+                if (tenkhoa == cbTenKhoa.Text)
+                {
+                    MessageBox.Show("Đã tồn tại tên khoa");
+                }else
 
-            if (makhoa.Equals(""))
-            {
-                MessageBox.Show("Mã khoa không được để trống");
-            }
-            else if (tenkhoa.Equals(""))
-            {
-                MessageBox.Show("Tên khoa không được để trống");
-            }
-            else if (KhoaDAO.Instance.InsertKhoa(makhoa, tenkhoa))
-            {
-                MessageBox.Show("Thêm khoa thành công");
-                LoadKhoa();
+                if (makhoa.Equals(""))
+                {
+                    MessageBox.Show("Mã khoa không được để trống");
+                }
+                else if (tenkhoa.Equals(""))
+                {
+                    MessageBox.Show("Tên khoa không được để trống");
+                }
+                else if (KhoaDAO.Instance.InsertKhoa(makhoa, tenkhoa))
+                {
+                    MessageBox.Show("Thêm khoa thành công");
+                    LoadKhoa();
 
+                }
+                else
+                {
+                    MessageBox.Show("Có lỗi khi thêm khoa");
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Có lỗi khi thêm khoa");
+                MessageBox.Show("Đã tồn tại mã khoa");
             }
         }
 
@@ -510,31 +553,45 @@ namespace QLDiemSV
 
         private void btnInsertMH_Click(object sender, EventArgs e)
         {
-            string mamon = txbMaMon.Text;
-            string tenmon = cbTenMon.Text;
-            string hocky = cbHocKy.Text;
+            try
+            {
 
-            if (mamon.Equals(""))
-            {
-                MessageBox.Show("Mã môn học không được để trống");
-            }
-            else if(tenmon.Equals(""))
-            {
-                MessageBox.Show("Tên môn học không được để trống");
-            }
-            else if (hocky.Equals(""))
-            {
-                MessageBox.Show("Học kỳ không được để trống");
-            }
-            else if(MonHocDAO.Instance.InsertMonHoc(mamon, tenmon,hocky))
-            {
-                MessageBox.Show("Thêm môn học thành công");
-                loadMonHoc();
+                string mamon = txbMaMon.Text;
+                string tenmon = cbTenMon.Text;
+                string hocky = cbHocKy.Text;
+                int i;
+                i = dsMonHoc.CurrentRow.Index; 
+                cbTenMon.Text = dsMonHoc.Rows[i].Cells[1].Value.ToString();
+                if (tenmon == cbTenMon.Text)
+                {
+                    MessageBox.Show("Đã tồn tại tên môn học");
+                }else
+                if (mamon.Equals(""))
+                {
+                    MessageBox.Show("Mã môn học không được để trống");
+                }
+                else if (tenmon.Equals(""))
+                {
+                    MessageBox.Show("Tên môn học không được để trống");
+                }
+                else if (hocky.Equals(""))
+                {
+                    MessageBox.Show("Học kỳ không được để trống");
+                }
+                else if (MonHocDAO.Instance.InsertMonHoc(mamon, tenmon, hocky))
+                {
+                    MessageBox.Show("Thêm môn học thành công");
+                    loadMonHoc();
 
+                }
+                else
+                {
+                    MessageBox.Show("Có lỗi khi thêm môn học");
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Có lỗi khi thêm môn học");
+                MessageBox.Show("Đã tồn tại mã môn học");
             }
         }
 
@@ -543,6 +600,7 @@ namespace QLDiemSV
             string mamon = txbMaMon.Text;
             string tenmon = cbTenMon.Text;
             string hocky = cbHocKy.Text;
+
             if (tenmon.Equals(""))
             {
                 MessageBox.Show("Tên môn học không được để trống");
@@ -589,66 +647,73 @@ namespace QLDiemSV
 
         private void btnInsertDiem_Click(object sender, EventArgs e)
         {
-            string masv = txbMSVD.Text;
-            string tensv = txbTenSVD.Text;
-            string tenlop = cbTenLopD.Text;
-            string tenmon = cbTenMonD.Text;
-            float diemtx = float.Parse(txbTX.Text);
-            float diemthi = float.Parse(txbDThi.Text);
-            float diemtk = float.Parse(txbTKet.Text);
-            float diemso4 = float.Parse(txbD4.Text);
-            string diemchu = cbDChu.Text;
-            string hocky = cbHKy.Text;
+            try
+            {
+                string masv = txbMSVD.Text;
+                string tensv = txbTenSVD.Text;
+                string tenlop = cbTenLopD.Text;
+                string tenmon = cbTenMonD.Text;
+                float diemtx = float.Parse(txbTX.Text);
+                float diemthi = float.Parse(txbDThi.Text);
+                float diemtk = float.Parse(txbTKet.Text);
+                float diemso4 = float.Parse(txbD4.Text);
+                string diemchu = cbDChu.Text;
+                string hocky = cbHKy.Text;
 
-            if (masv.Equals(""))
-            {
-                MessageBox.Show("Mã sinh viên  không được để trống");
-            }
-            else if (tensv.Equals(""))
-            {
-                MessageBox.Show("Tên sinh viên  không được để trống");
-            }
-            else if (tenlop.Equals(""))
-            {
-                MessageBox.Show("Tên lớp  không được để trống");
-            }
-            else if (tenmon.Equals(""))
-            {
-                MessageBox.Show("Tên môn không được để trống");
-            }
-            else if (diemtx.Equals(""))
-            {
-                MessageBox.Show("Điểm thường xuyên  không được để trống");
-            }
-            else if (diemthi.Equals(""))
-            {
-                MessageBox.Show("Điểm thi không được để trống");
-            }
-            else if (diemtk.Equals(""))
-            {
-                MessageBox.Show("Điểm tổng kết không được để trống");
-            }
-            else if (diemso4.Equals(""))
-            {
-                MessageBox.Show("Điểm số 4 không được để trống");
-            }
-            else if (diemchu.Equals(""))
-            {
-                MessageBox.Show("Điểm chữ không được để trống");
-            }
-            else if (hocky.Equals(""))
-            {
-                MessageBox.Show("Học kỳ  không được để trống");
-            }
-            else if (KetQuaDAO.Instance.InsertKQ(masv,tensv,tenlop,tenmon,diemtx,diemthi,diemtk,diemso4,diemchu,hocky))
-            {
-                MessageBox.Show("Thêm kết quả sinh viên thành công");
-                loadKetQua();
+                if (masv.Equals(""))
+                {
+                    MessageBox.Show("Mã sinh viên  không được để trống");
+                }
+                else if (tensv.Equals(""))
+                {
+                    MessageBox.Show("Tên sinh viên  không được để trống");
+                }
+                else if (tenlop.Equals(""))
+                {
+                    MessageBox.Show("Tên lớp  không được để trống");
+                }
+                else if (tenmon.Equals(""))
+                {
+                    MessageBox.Show("Tên môn không được để trống");
+                }
+                else if (diemtx.Equals(""))
+                {
+                    MessageBox.Show("Điểm thường xuyên  không được để trống");
+                }
+                else if (diemthi.Equals(""))
+                {
+                    MessageBox.Show("Điểm thi không được để trống");
+                }
+                else if (diemtk.Equals(""))
+                {
+                    MessageBox.Show("Điểm tổng kết không được để trống");
+                }
+                else if (diemso4.Equals(""))
+                {
+                    MessageBox.Show("Điểm số 4 không được để trống");
+                }
+                else if (diemchu.Equals(""))
+                {
+                    MessageBox.Show("Điểm chữ không được để trống");
+                }
+                else if (hocky.Equals(""))
+                {
+                    MessageBox.Show("Học kỳ  không được để trống");
+                }
+                else if (KetQuaDAO.Instance.InsertKQ(masv, tensv, tenlop, tenmon, diemtx, diemthi, diemtk, diemso4, diemchu, hocky))
+                {
+                    MessageBox.Show("Thêm kết quả sinh viên thành công");
+                    loadKetQua();
 
+                }
+                else
+                {
+                    MessageBox.Show("Có lỗi khi thêm kết quả sinh viên");
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Có lỗi khi thêm kết quả sinh viên");
+                MessageBox.Show("Đã tồn tại mã sinh viên");
             }
         }
  
