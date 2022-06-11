@@ -451,7 +451,14 @@ namespace QLDiemSV
             i = dsSV.CurrentRow.Index;
             txbMSV.Text = dsSV.Rows[i].Cells[0].Value.ToString();
             txbTenSV.Text = dsSV.Rows[i].Cells[1].Value.ToString();
-            dtNSSV.Text = dsSV.Rows[i].Cells[2].Value.ToString();
+            try
+            {
+                dtNSSV.Text = dsSV.Rows[i].Cells[2].Value.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Có lỗi khi hiển thị ngày");
+            }
             cbGTSV.Text = dsSV.Rows[i].Cells[3].Value.ToString();
             txbDiaChiSV.Text = dsSV.Rows[i].Cells[4].Value.ToString();
         }
@@ -477,6 +484,7 @@ namespace QLDiemSV
                 string tenkhoa = cbTenKhoa.Text;
                 int i;
                 i = dsKhoa.CurrentRow.Index;
+                txbMaKhoa.Text = dsKhoa.Rows[i].Cells[0].Value.ToString();
                 cbTenKhoa.Text = dsKhoa.Rows[i].Cells[1].Value.ToString();
                 if (tenkhoa == cbTenKhoa.Text)
                 {
@@ -562,9 +570,9 @@ namespace QLDiemSV
                 int i;
                 i = dsMonHoc.CurrentRow.Index; 
                 cbTenMon.Text = dsMonHoc.Rows[i].Cells[1].Value.ToString();
-                if (tenmon == cbTenMon.Text)
+                if (tenmon == cbTenMon.Text&&hocky==cbHocKy.Text)
                 {
-                    MessageBox.Show("Đã tồn tại tên môn học");
+                    MessageBox.Show("Đã tồn tại tên môn học trong "+cbHocKy.Text);
                 }else
                 if (mamon.Equals(""))
                 {

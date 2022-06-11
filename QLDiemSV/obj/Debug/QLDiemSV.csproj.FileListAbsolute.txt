@@ -12,3 +12,17 @@ E:\DATABASE SQL\QLDiemSV\obj\Debug\QLDiemSV.DangNhap.resources
 E:\DATABASE SQL\QLDiemSV\obj\Debug\QLDiemSV.Admin.resources
 E:\DATABASE SQL\QLDiemSV\obj\Debug\QLDiemSV.TraCuuTT.resources
 E:\DATABASE SQL\QLDiemSV\obj\Debug\QLDiemSV.csproj.SuggestedBindingRedirects.cache
+E:\quanlidiem\QLDiemSV\bin\Debug\QLDiemSV.exe.config
+E:\quanlidiem\QLDiemSV\bin\Debug\QLDiemSV.exe
+E:\quanlidiem\QLDiemSV\bin\Debug\QLDiemSV.pdb
+E:\quanlidiem\QLDiemSV\obj\Debug\QLDiemSV.csproj.AssemblyReference.cache
+E:\quanlidiem\QLDiemSV\obj\Debug\QLDiemSV.csproj.SuggestedBindingRedirects.cache
+E:\quanlidiem\QLDiemSV\obj\Debug\QLDiemSV.Admin.resources
+E:\quanlidiem\QLDiemSV\obj\Debug\QLDiemSV.DangNhap.resources
+E:\quanlidiem\QLDiemSV\obj\Debug\QLDiemSV.Properties.Resources.resources
+E:\quanlidiem\QLDiemSV\obj\Debug\QLDiemSV.QuanLyDiem.resources
+E:\quanlidiem\QLDiemSV\obj\Debug\QLDiemSV.TraCuuTT.resources
+E:\quanlidiem\QLDiemSV\obj\Debug\QLDiemSV.csproj.GenerateResource.cache
+E:\quanlidiem\QLDiemSV\obj\Debug\QLDiemSV.csproj.CoreCompileInputs.cache
+E:\quanlidiem\QLDiemSV\obj\Debug\QLDiemSV.exe
+E:\quanlidiem\QLDiemSV\obj\Debug\QLDiemSV.pdb

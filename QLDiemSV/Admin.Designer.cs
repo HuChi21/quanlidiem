@@ -48,7 +48,6 @@ namespace QLDiemSV
             this.cbGTSV = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dtNSSV = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txbTenSV = new System.Windows.Forms.TextBox();
@@ -192,6 +191,7 @@ namespace QLDiemSV
             this.button2 = new System.Windows.Forms.Button();
             this.label36 = new System.Windows.Forms.Label();
             this.dsSVDF = new System.Windows.Forms.DataGridView();
+            this.dtNSSV = new System.Windows.Forms.TextBox();
             this.tbAdmin.SuspendLayout();
             this.tbTTSV.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -494,14 +494,6 @@ namespace QLDiemSV
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(435, 47);
             this.panel4.TabIndex = 2;
-            // 
-            // dtNSSV
-            // 
-            this.dtNSSV.Location = new System.Drawing.Point(136, 8);
-            this.dtNSSV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtNSSV.Name = "dtNSSV";
-            this.dtNSSV.Size = new System.Drawing.Size(223, 22);
-            this.dtNSSV.TabIndex = 3;
             // 
             // label3
             // 
@@ -2146,6 +2138,14 @@ namespace QLDiemSV
             this.dsSVDF.RowTemplate.Height = 24;
             this.dsSVDF.Size = new System.Drawing.Size(559, 355);
             this.dsSVDF.TabIndex = 0;
+            // 
+            // dtNSSV
+            // 
+            this.dtNSSV.Location = new System.Drawing.Point(136, 11);
+            this.dtNSSV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtNSSV.Name = "dtNSSV";
+            this.dtNSSV.Size = new System.Drawing.Size(223, 22);
+            this.dtNSSV.TabIndex = 3;
             // 
             // Admin
             // 
