@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QLDiemSV
+namespace QLDiemSV 
 {
     public partial class Admin : Form
     {
@@ -334,7 +334,9 @@ namespace QLDiemSV
                 {
                     MessageBox.Show("Thêm lớp thành công");
                     loadLop();
-
+                    LoadTenlopIntoCombobox(cbTenLop);
+                    LoadTenlopIntoCombobox(cbTenLopD);
+                    LoadMonHocIntoCombobox(cbTenMonD);
                 }
                 else
                 {
@@ -370,6 +372,9 @@ namespace QLDiemSV
             {
                 MessageBox.Show("Xoa lớp thành công");
                 loadLop();
+                LoadTenlopIntoCombobox(cbTenLop);
+                LoadTenlopIntoCombobox(cbTenLopD);
+                LoadMonHocIntoCombobox(cbTenMonD);
             }
             else
             {
@@ -390,6 +395,9 @@ namespace QLDiemSV
             {
                 MessageBox.Show("Sửa lớp thành công");
                 loadLop();
+                LoadTenlopIntoCombobox(cbTenLop);
+                LoadTenlopIntoCombobox(cbTenLopD);
+                LoadMonHocIntoCombobox(cbTenMonD);
             }
             else
             {
@@ -503,7 +511,7 @@ namespace QLDiemSV
                 {
                     MessageBox.Show("Thêm khoa thành công");
                     LoadKhoa();
-
+                    LoadKhoaIntoCombobox(cbTenKhoa);
                 }
                 else
                 {
@@ -537,6 +545,7 @@ namespace QLDiemSV
             {
                 MessageBox.Show("Sửa khoa thành công");
                 LoadKhoa();
+                LoadKhoaIntoCombobox(cbTenKhoa);
             }
             else
             {
@@ -552,6 +561,7 @@ namespace QLDiemSV
             {
                 MessageBox.Show("Xoa khoa thành công");
                 LoadKhoa();
+                LoadKhoaIntoCombobox(cbTenKhoa);
             }
             else
             {
@@ -570,6 +580,7 @@ namespace QLDiemSV
                 int i;
                 i = dsMonHoc.CurrentRow.Index; 
                 cbTenMon.Text = dsMonHoc.Rows[i].Cells[1].Value.ToString();
+                cbHocKy.Text = dsMonHoc.Rows[i].Cells[2].Value.ToString();
                 if (tenmon == cbTenMon.Text&&hocky==cbHocKy.Text)
                 {
                     MessageBox.Show("Đã tồn tại tên môn học trong "+cbHocKy.Text);
@@ -590,7 +601,9 @@ namespace QLDiemSV
                 {
                     MessageBox.Show("Thêm môn học thành công");
                     loadMonHoc();
-
+                    LoadMonHocIntoCombobox(cbTenMon);
+                    LoadTenlopIntoCombobox(cbTenLopD);
+                    LoadMonHocIntoCombobox(cbTenMonD);
                 }
                 else
                 {
@@ -620,6 +633,9 @@ namespace QLDiemSV
             {
                 MessageBox.Show("Sửa môn học  thành công");
                 loadMonHoc();
+                LoadMonHocIntoCombobox(cbTenMon);
+                LoadTenlopIntoCombobox(cbTenLopD);
+                LoadMonHocIntoCombobox(cbTenMonD);
             }
             else
             {
@@ -636,6 +652,9 @@ namespace QLDiemSV
             {
                 MessageBox.Show("Xoa môn học thành công");
                 loadMonHoc();
+                LoadMonHocIntoCombobox(cbTenMon);
+                LoadTenlopIntoCombobox(cbTenLopD);
+                LoadMonHocIntoCombobox(cbTenMonD);
             }
             else
             {
@@ -652,7 +671,7 @@ namespace QLDiemSV
             cbHocKy.Text = dsMonHoc.Rows[i].Cells[2].Value.ToString();
            
         }
-
+       
         private void btnInsertDiem_Click(object sender, EventArgs e)
         {
             try
@@ -667,6 +686,7 @@ namespace QLDiemSV
                 float diemso4 = float.Parse(txbD4.Text);
                 string diemchu = cbDChu.Text;
                 string hocky = cbHKy.Text;
+                
 
                 if (masv.Equals(""))
                 {
@@ -712,7 +732,8 @@ namespace QLDiemSV
                 {
                     MessageBox.Show("Thêm kết quả sinh viên thành công");
                     loadKetQua();
-
+                    loadSVDF();
+                    loadSVDA();
                 }
                 else
                 {
@@ -785,7 +806,8 @@ namespace QLDiemSV
             {
                 MessageBox.Show("Sửa kết quả sinh viên thành công");
                 loadKetQua();
-
+                loadSVDF();
+                loadSVDA();
             }
             else
             {
@@ -801,6 +823,8 @@ namespace QLDiemSV
             {
                 MessageBox.Show("Xoa kết quả sinh viên thành công");
                 loadKetQua();
+                loadSVDF();
+                loadSVDA();
             }
             else
             {
@@ -961,5 +985,7 @@ namespace QLDiemSV
             }
             this.txbSVA.Text = Convert.ToString(diema);
         }
+
+        
     }
 }
