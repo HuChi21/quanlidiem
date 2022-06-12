@@ -45,7 +45,7 @@ namespace QLDiemSV
             }
             else
             {
-                MessageBox.Show("Tên đăng nhập hoặc tài khoản không đúng vui lòng nhập lại!!!");
+                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng vui lòng nhập lại!!!");
             }
         }
         bool Login(string userName,string passWord) {
