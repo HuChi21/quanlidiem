@@ -6,7 +6,7 @@
 
 #Giáo viên hướng dẫn: Thầy Phạm Văn Hà
 
-#Lớp HTTT1-K14   
+#Lớp 20212IT6059001  
 #Nhóm: 14 
 
 #Tổng quan: Đây là chương trình quản lý điểm sinh viên được viết bằng ngôn ngữ C#
